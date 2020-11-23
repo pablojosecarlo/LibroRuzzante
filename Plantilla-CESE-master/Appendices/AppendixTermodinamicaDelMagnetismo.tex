@@ -1,0 +1,258 @@
+% Apéndice Termodinámica del magnetismo
+
+\chapter{Elementos de termodinámica del magnetismo} % Main appendix title
+
+\label{AppendixTermodinámicaDelMagnetismo} % For referencing this appendix elsewhere, use \ref{AppendixA}
+
+
+%Introducción al apéndice
+
+
+%\subsection{Aceros y fundiciones al carbono.}
+\section{Trabajo magnético}
+
+A partir de las ecuaciones de la teoría electromagnética clásica y de la fuerza de Lorentz (ver fórmula \ref{eq:FLorentz}) se puede deducir una fórmula para el elemento de trabajo magnético que puede recibir un
+sistema termodinámico: 
+
+\begin{equation}
+	\label{eq:D1}
+	\delta W_{mag}=\iiint \left(\V{H}\cdot d\V{B} \right) dV
+\end{equation}
+
+En un principio la integral triple que aparece en \ref{eq:D1} se debe extender a todo el espacio. 
+
+Para deducir esta expresión del trabajo magnético podemos comenzar con la ley de Ampere escrita así: 
+
+\begin{equation*}
+	\Rotor{H}-\dPv{D}{t}=\V{J}_{c}
+\end{equation*}
+
+Multiplicando escalarmente ambos miembros por el campo eléctrico, obtenemos: 
+
+\begin{equation*}
+	\V{E}\cdot\Rotor{H}-\V{E}\cdot\dPv{D}{t}=\V{E}\cdot\V{J}_{c}
+\end{equation*}
+
+Teniendo en cuenta la fórmula
+
+\begin{equation*}
+	\Div \left( \V{E}\times\V{H} \right) = \V{H}\cdot\Rotor{E}-\V{E}\cdot\Rotor{H}
+\end{equation*}
+
+y la ley de inducción de Faraday: $\Rotor{E}=-\dPv{B}{t}$ 
+
+resulta: $\V{E}\cdot\V{J}_{c} = -\Div \left( \V{E}\times\V{H} \right) -\V{E} \cdot \dPv{D}{t} -\V{H} \cdot \dPv{B}{t} $
+
+Integrando en una región $R$ que incluye a la región $Rs$ ocupada por el sistema:
+
+\begin{equation}
+	\label{eq:D2}
+	\iiint_{R}\V{E}\cdot\V{J}_{c}\,dV = -\iiint_{R}\Div \left( \V{E}\times\V{H} \right)dV -\iiint_{R}\V{E} \cdot \dPv{D}{t}dV -\iiint_{R}\V{H} \cdot \dPv{B}{t}dV
+\end{equation}
+
+Por el teorema de la divergencia de Gauss, siendo $\hat{n}$ el vector unitario normal dirigido hacia el exterior en cada punto de la superficie frontera $\partial R$ \citep{Santalo1}:
+
+\begin{equation*}
+	\iiint_{R}\Div \left( \V{E}\times\V{H} \right)dV =\iint_{\partial R} \left( \V{E}\times\V{H} \right) \cdot \hat{n} dS
+\end{equation*}
+
+\begin{sloppypar}
+Si los campos son casi-estacionarios y la región se agranda cada vez más en todas direcciones, la integral de superficie ${\iint_{\partial R} \left( \V{E}\times\V{H} \right) \cdot \hat{n} dS}$ tiende a cero.
+ tiende a cero.
+\end{sloppypar} 
+ 
+ 
+Multiplicando por un pequeño intervalo de tiempo $\delta t$ resulta, extendiendo las integrales que aparecen en \ref{eq:D2} a todo el espacio:
+
+\begin{equation}
+	\label{eq:D3}
+	\delta t \iiint_{\infty}\V{E}\cdot\V{J}_{c}\,dV = -\iiint_{\infty}\V{E} \cdot \delta t \dPv{D}{t}dV -\iiint_{\infty}\V{H} \cdot \delta t \dPv{B}{t}dV
+\end{equation}
+
+\begin{sloppypar}
+Al mismo tiempo, si el sistema ocupa la región acotada $Rs$ la integral ${\iiint_{\infty}\V{E}\cdot\V{J}_{c}dV}$ se reduce a la integral sobre la región ocupada por el sistema ${\iiint_{Rs}\V{E}\cdot\V{J}_{c}dV}$, mientras que
+las integrales que no se anulan en el miembro a la derecha del signo de igual se deben extender a todo el espacio. Sustituyendo ${\delta t \dPv{D}{t}}$ por $d\V{D}$ y ${\delta t \dPv{B}{t}}$ por $d\V{B}$ resulta:
+\end{sloppypar}
+
+\begin{equation}
+	\label{eq:D4}
+	\delta t \iiint_{Rs}\V{E}\cdot\V{J}_{c}\,dV = -\iiint_{\infty}\V{E} \cdot d\V{D}\,dV -\iiint_{\infty}\V{H} \cdot d\V{B}\,dV
+\end{equation}
+
+\begin{sloppypar}
+Si $\rho$ es el promedio local de la densidad de carga eléctrica y $\V{v}$ es la velocidad promedio local de su desplazamiento, entonces ${\V{J}_{c}=\rho\V{v}}$ y ${\iiint_{Rs}\left( \V{E}\cdot\V{J}_{c}\right) dV=\iiint_{Rs}\left( \V{v}\cdot\V{E}\right)\rho dV}$
+
+
+
+Como ${\rho(\V{v} \cdot \V{E})= \V{v} \cdot \rho(\V{E} + \V{v} \times \V{B}) = \V{v} \cdot \V{f}_Lorentz}$ donde ${\V{f}_{Lorentz} = \rho(\V{E} + \V{v} \times \V{B})}$ es la fuerza de Lorentz por unidad de volumen que actúa sobre las cargas debido al campo electromagnético local, resulta que:
+
+\begin{equation}
+	\label{eq:D5}
+	\iiint_{Rs}\V{E}\cdot\V{J}_{c}\,dV = \iiint_{Rs}\left( \V{v} \cdot \V{E}\right)\rho\, dV =\iiint_{Rs} \V{v} \cdot \V{f}_{Lorentz}\,dV
+\end{equation}
+
+Es la potencia mecánica que las cargas componentes del sistema termodinámico intercambian con el campo.
+
+Introduzcamos ahora los elementos de trabajo recibidos por el sistema:
+
+\begin{equation}
+	\label{eq:D6}
+	\text{Electromagnético}\quad \delta W_{em} + \delta t \iiint_{Rs}\left( \V{E}\cdot\V{J}_{c}\right) dV = 0
+\end{equation}
+
+\begin{equation}
+	\label{eq:D7}
+	\text{Eléctrico}\quad \delta W_{el} = \iiint_{Rs}\left( \V{E} \cdot d\V{D}\right)dV 
+\end{equation}
+
+\begin{equation}
+	\label{eq:D8}
+	\text{Magnético}\quad \delta W_{mag} = \iiint_{Rs}\left( \V{H} \cdot d\V{B}\right)dV 
+\end{equation}
+
+\end{sloppypar}
+
+A partir de \ref{eq:D4} y de sus definiciones resulta que estos elementos de trabajo verifican:
+
+\begin{equation}
+	\label{eq:D9}
+	\delta W_{em} = \delta W_{el} + \delta W_{mag}
+\end{equation}
+
+Como $\V{B}= \mu_{0}\V{H}+\V{M}$ donde $\V{M}$ es la polarizabilidad magnética del sistema termodinámico, el trabajo magnético se puede descomponer en la suma de dos términos:
+
+\begin{equation}
+	\label{eq:D10}
+	\delta W_{mag} = \mu_{0} \iiint \left( \V{H}\cdot d\V{H} \right)dV+ \iiint_{Rs} \left( \V{H}\cdot d\V{M} \right)dV
+\end{equation}
+
+Si $\V{M}$ es la respuesta de polarización del sistema considerado al campo magnético, entonces, mientras que la integral del primer término se extiende a todo el espacio, la integral del segundo término se extiende solamente a la región $Rs$ ocupada por el sistema.
+
+El trabajo $\delta W_{mag}$ se puede introducir en la expresión de la primera ley, junto con otros elementos de trabajo recibidos por el sistema termodinámico (mecánico, eléctrico, químico):
+
+\begin{equation*}
+	 \delta W = \delta W_{em} + \delta W_{el} + \delta W_{mag} + \cdots
+\end{equation*}
+
+En particular, el elemento de trabajo mecánico para un sólido no homogéneo y anisótropo se puede escribir así, en términos de los tensores de esfuerzos $\bar{\bar{\sigma}}$ y de deformaciones $\bar{\bar{\varepsilon}}$ junto con sus correspondientes tensores desviadores $\bar{\bar{\sigma}}_{D}$ y $\bar{\bar{\varepsilon}}_{D}$ \citep{Laura1}.
+
+\begin{equation}
+	\label{eq:D11}
+	 \delta W_{mec} = \iiint_{Rs}\left( \bar{\bar{\sigma}} \cdot \bar{\bar{\varepsilon}} \right)dV=-p\,dV+\iiint_{Rs}\left( \bar{\bar{\sigma}}_{D} \cdot \bar{\bar{\varepsilon}}_{D}  \right)dV  
+\end{equation}
+
+Integremos ahora estos resultados en el marco que suministran las leyes de la termodinámica.
+
+Si $dU$ es la variación en la energía interna del sistema, $\delta Q$ es el elemento de calor absorbido y $\delta W$ es el elemento de trabajo recibido por el sistema, la primera ley se formula así: 
+
+\begin{equation}
+	\label{eq:D12}
+	 dU= \delta Q + \delta W
+\end{equation}
+
+Cuando los procesos son reversibles ($T$ es la temperatura absoluta y $dS$ es la variación en la entropía del sistema):
+
+\begin{equation}
+	\label{eq:D13}
+	 \delta Q = T dS
+\end{equation}
+
+A partir de \ref{eq:D12} y \ref{eq:D13} resulta la forma combinada de la primera y la segunda ley de la termodinámica:
+
+\begin{equation}
+	\label{eq:D14}
+	 dU= T dS + \delta W
+\end{equation}
+
+Suponiendo que el trabajo magnético es el único a tener en cuenta, se lo puede introducir en \ref{eq:D14}:
+
+\begin{equation}
+	\label{eq:D15}
+	 dU= T dS + \delta W_{mag}
+\end{equation}
+
+El elemento de trabajo magnético se puede vincular con la variación en la energía libre de Helmholtz $F=U-TS$ asociada a ese trabajo. Durante un proceso isotermo:
+
+\begin{equation}
+	\label{eq:D16}
+	 dF_{T}= \delta W_{mag} = \iiint \left( \V{H} \cdot d\V{B} \right) dV
+\end{equation}
+
+En general el campo magnético, el campo de inducción magnética y la temperatura local se relacionan entre sí. Fijando la temperatura y suponiendo que la magnetización del material no presenta histéresis, y que las demás variables macroscópicas que pueden incidir en la magnetización local permanecen incambiadas, la relación entre el campo de inducción y el campo magnético es una correspondencia uno a uno. Entonces, en ausencia de fenómenos de histéresis magnética, integrando \ref{eq:D16} a temperatura constante desde $\V{B}=\V{0}$ hasta un valor cualquiera $\V{B}$ se obtiene la variación de la energía libre de Helmholtz \citep{Guggenheim1}
+
+\begin{equation}
+\begin{aligned}
+	\label{eq:D17}
+	 F-F_{0} &= \iiint\left\lbrace \int_{\vec{0}}^{\vec{B}} \left( \V{H}\cdot d\V{B} \right)  \right\rbrace_{T} dV \\
+	 &= \iiint\left\lbrace \dfrac{1}{2}\mu_{0}H^{2} \right\rbrace_{T} dV +
+\iiint\left\lbrace \int_{\vec{0}}^{\vec{B}} \left( \V{H}\cdot d\V{M} \right)  \right\rbrace_{T} dV 	 
+\end{aligned}
+\end{equation}
+
+Cuando es necesario tener en cuenta el trabajo presión volumen durante un proceso que puede no ser isotermo:
+
+\begin{equation}
+	\label{eq:D18}
+	 dU= T\,dS-p\,dV+ \iiint \left( \V{H} \cdot d\V{B} \right) dV
+\end{equation}
+
+\begin{equation}
+	\label{eq:D19}
+	 dF= -S\,dT-p\,dV+ \iiint \left( \V{H} \cdot d\V{B} \right) dV
+\end{equation}
+
+A temperatura y volumen constantes: ${dF_{T,V}= \delta W_{mag}= \iiint \left( \V{H} \cdot d\V{B} \right) dV }$
+
+La variación en la energía libre de Gibbs para un sistema termodinámico magnetizado (en ausencia de fenómenos de histéresis) con energía interna $U$ , entropía $S$, temperatura absoluta $T$, volumen $V$ y presión $p$ se puede expresar así \citep{Guggenheim1}:
+
+\begin{equation}
+	\label{eq:D20}
+	 dG= -S\,dT + V\,dp+ \iiint \left( \V{B} \cdot d\V{H} \right) dV
+\end{equation}
+
+\begin{sloppypar}
+Teniendo en cuenta la relación  ${\V{B}= \mu_{0}\V{H}+\V{M}}$, el término magnético que aparece en \ref{eq:D20} se puede reescribir así: ${ \iiint \left( \V{B} \cdot d\V{H} \right) dV =  \iiint \mu_{0}\left( \V{H} \cdot d\V{H} \right) dV + \iiint_{Rs} \left( \V{M} \cdot d\V{H} \right) dV}$
+\end{sloppypar}
+A temperatura y presión constantes:
+
+\begin{equation}
+	\label{eq:D21}
+	dG_{T, p} = - \iiint \left( \V{B} \cdot d\V{H} \right) dV 
+\end{equation}
+
+\begin{sloppypar}
+A veces se la relación entre el campo de inducción $\V{B}$ y el campo magnético $\V{H}$ se formula de esta otra forma, equivalente a la anterior, puesto que $\mu_{0}$ es una constante universal: ${\V{B} = \mu_{0}\left( \V{H}+\V{M} \right)}$. Ahora a $\V{M}$ se la denomina \textbf{magnetización} (con la anterior definición $\V{M}$ era la polarización). Cuando la relación entre el campo de inducción $\V{B}$ y el campo magnético $\V{H}$ adopta la forma $\V{B} =\mu_{0}( \V{H} +\V{M})$ la relación $\V{M}=\chi\V{H}$ para un medio isótropo involucra la susceptibilidad magnética relativa $\chi$ que es un número que no tiene dimensiones. Es constante si el medio es lineal. Si el medio es anisótropo pero lineal, ${\V{M}=\bar{\bar{\chi}}\V{H}}$ donde $\bar{\bar{\chi}}$ es ahora un tensor simétrico de orden dos.
+\end{sloppypar}
+
+La energía libre de Gibbs para un sistema termodinámico magnetizado (en ausencia de fenómenos de histéresis) con energía interna $U$ , entropía $S$, temperatura absoluta $T$, volumen $V$ y presión $p$ se puede estimar incrementando el campo magnético desde cero hasta un cierto valor mediante un proceso isotermo e isóbaro. En ese caso, a partir de \ref{eq:D21} y asumiendo que las demás variables macroscópicas que pueden incidir en la magnetización local también permanecen sin cambios:
+
+
+\begin{equation}
+	\label{eq:D22}
+	 G = U + pV - TS - \iiint\left\lbrace \int_{\vec{0}}^{\vec{H}} \left( \V{B}\cdot d\V{H} \right) \right\rbrace_{T} dV
+\end{equation}
+
+\begin{sloppypar}
+Cuando se trabaja con ${\V{B} = \mu_{0}\left( \V{H}+\V{M} \right)}$la integral triple se puede expresar como suma de dos términos: ${\iiint\left\lbrace \frac{1}{2}\mu_{0}H^{2} \right\rbrace_{T} dV +
+\iiint_{Rs}\left\lbrace \mu_{0} \int_{\vec{0}}^{\vec{H}} \left( \V{H}\cdot d\V{M} \right)  \right\rbrace_{T} dV}$ La segunda integral se extiende sobre la región que ocupa el sistema considerado, mientras que la primera se extiende a todo el espacio: al sistema y a su ambiente.
+\end{sloppypar}
+
+Entonces, la densidad de energía libre de Gibbs local $g$ se puede escribir así:
+
+\begin{equation}
+	\label{eq:D23}
+	 g = u + p - Ts -\frac{1}{2}\mu_{0}H^{2} - \mu_{0} \left\lbrace \int_{\vec{0}}^{\vec{H}} \V{M}\cdot d\V{H}\right\rbrace_{T,p}
+\end{equation}
+
+El término: $\;\Bb{g}_{M, H}=-\mu_{0}{\left\lbrace \int_{\vec{0}}^{\vec{H}} \V{M}\cdot d\V{H}\right\rbrace}_{T,p}$ del miembro de la derecha de esta ecuación se puede interpretar como el aporte debido a la magnetización local del material.
+
+Supongamos que la magnetización se puede expresar como función lineal del campo $H$: $\V{M}= \bar{\bar{\chi}} \cdot \V{H}$ A partir de esta aproximación se obtiene para el término de densidad de energía libre asociado a la magnetización: 
+
+\begin{equation}
+	\label{eq:D24}
+	 g_{M,H} = -\frac{1}{2}\mu_{0}\V{H}\cdot \bar{\bar{\chi}} \cdot \V{H}
+\end{equation}
+
+Esta última fórmula se utiliza en el capítulo \ref{sistemasBiologicos} para estimar los torques originados en la anisotropía en las propiedades diamagnéticas de las estructuras moleculares y supramoleculares.
+
+En el caso de un sólido anisótropo se puede añadir el aporte de los tensores de deformación y de esfuerzos a la energía interna y a las energías libres de la totalidad del sistema y a las densidades locales correspondientes a cada una de estas energías.

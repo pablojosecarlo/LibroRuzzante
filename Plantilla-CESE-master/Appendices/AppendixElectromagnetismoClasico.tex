@@ -1,0 +1,117 @@
+% Apéndice Magnetismo en Aceros
+
+\chapter{Electromagnetismo Clásico} % Main appendix title
+
+\label{AppendixElectromagnetismoClasico} % For referencing this appendix elsewhere, use \ref{AppendixA}
+
+
+%\section{Magnetismo en aceros.}
+
+
+Ecuaciones de Maxwell
+
+
+
+%\subsection{Aceros y fundiciones al carbono.}
+\section{Ecuaciones de Maxwell}
+
+
+Cuando las relaciones constitutivas entre el campo de inducción \overrightarrow{B} y el campo magnético \overrightarrow{H}, entre el campo de desplazamiento \overrightarrow{D} y el campo eléctrico \overrightarrow{E} y entre el campo de densidad de corriente eléctrica de conducción \overrightarrow{J_{c}} y el campo eléctrico \overrightarrow{E}, son lineales, las ecuaciones de Maxwell, pueden escribirse de la siguiente forma:
+
+\begin{equation}
+\label{eq:ap1}
+\begin{aligned}
+	\nabla \times \overrightarrow{H} = \overrightarrow{J_{c}} + \dPv{D}{t} 
+	\quad \quad
+	&\nabla \times \overrightarrow{E} = - \dPv{B}{t} 	\\
+	\nabla \cdot \overrightarrow{B}=0
+	\quad \quad
+	&\nabla \cdot \overrightarrow{D} = \rho_{l} 
+\end{aligned}
+\end{equation}
+
+Y las ecuaciones constitutivas de medio:
+
+\begin{equation}
+\label{eq:ap2}
+	\overrightarrow{B}    = \bar{\bar{\mu}}      \cdot \overrightarrow{H} 
+	\quad\quad
+	\overrightarrow{D}    = \bar{\bar{\epsilon}} \cdot \overrightarrow{E} 
+	\quad\quad
+	\overrightarrow{J_{c}}= \bar{\bar{\sigma}}   \cdot \overrightarrow{E} 
+\end{equation}
+
+
+\label{relMH}
+Cuando la relación entre el campo magnético inducción $\V{B}$ y el campo magnético excitación $\V{H}$ adopta la forma $\V{B}=\mu_{0}(\V{H}+\V{M})$, siendo $\V{M}$ la magnetización del medio; la relación $\V{M}=\chi\V{H}$ para un medio isótropo involucra la suceptibilidad magnética relativa $\chi$ que es un número que no tiene dimensiones. Será una constante numérica simple  si el medio es lineal isótropo y homogeneo. Si el medio es homogeneo y lineal pero anisótropo, $\chi$ será un tensor constante simétrico de orden 2: $\bar{\bar{\chi}}$ 
+
+
+
+Estas ecuaciones dan origen a la ley volumétrica de continuidad de conservación de la carga:
+
+\begin{equation}
+	\nabla \cdot \overrightarrow{J_{c}} = \dP{\rho}{t} 
+\end{equation}
+
+\section{Fuerza de Lorentz}
+
+La fuerza que actúa por unidad de volumen sobre una densidad de carga libre $\rho_{l}$ en movimiento con velocidad \overrightarrow{v} es
+
+\begin{equation}
+	\label{eq:FLorentz}
+	\overrightarrow{f_{v}}= \rho(\overrightarrow{E}+\overrightarrow{v}\times\overrightarrow{B})
+\end{equation}
+
+\section{Fuerza de sobre una partícula magnetizada}
+
+Entendamos por partícula magnetizada a aquella que presenta un momento magnético \overrightarrow{m}
+
+\begin{equation}
+	\label{eq:FPartMag}
+	\overrightarrow{F_{m}}= \left( \overrightarrow{m} \cdot \nabla \right) \overrightarrow{B}
+\end{equation}
+
+La expresión para la fuerza se puede deducir a partir de la fórmula de la fuerza que actúa sobre un lazo delgado a través del cual circula una corriente $i$ cuando se encuentra en un campo magnético externo $\overrightarrow{B}$: $\overrightarrow{F_{m}}=i\oint d\overrightarrow{r}\times\overrightarrow{B}$ 
+
+A partir del teorema de Stokes se puede demostrar la igualdad: 
+
+\begin{equation*}
+\oint d\overrightarrow{r}\times\overrightarrow{B}=\iint (d\overrightarrow{S}\times \nabla)\times\overrightarrow{B}
+\end{equation*}
+
+donde la integral de superficie se toma sobre una superficie abierta, orientada y lo bastante regular, que tiene como borde el lazo de corriente $i$. 
+
+En los elementos diferenciales vectoriales $d\overrightarrow{r}=(dS)\hat{t}$ (longitud) y $d\overrightarrow{S}=(dS)\hat{n}$ (área), como es usual, $\hat{t}$ es el versor tangente en cada punto del lazo y $\hat{n}$ es el versor normal en cada punto de la superficie bordeada por el lazo. 
+
+Como en todas partes se verifica $\nabla\cdot\overrightarrow{B}=0$ y como en puntos a la vez exteriores al lazo de corriente y a las fuentes del campo se verifica $\nabla \times \overrightarrow{B} = 0$ resulta que 
+
+\begin{equation*}
+(d\overrightarrow{S} \times \nabla ) \times \overrightarrow{B} = (d\overrightarrow{S} \cdot \nabla ) \overrightarrow{B}
+\end{equation*} 
+
+Como consecuencia de esta última igualdad: 
+
+\begin{equation*}
+\overrightarrow{F_{m}}=i\oint d\overrightarrow{r}\times\overrightarrow{B} = i \iint (d\overrightarrow{S} \cdot \nabla)\overrightarrow{B}
+\end{equation*}
+
+Tomando el lazo lo bastante pequeño es posible sustituir 
+
+\begin{equation*}
+\iint (d\overrightarrow{S} \cdot \nabla)\overrightarrow{B}\quad \text{por}\quad \left( \iint (d\overrightarrow{S}) \cdot \nabla\right) \overrightarrow{B}
+\end{equation*}
+
+de modo que: 
+
+\begin{equation*}
+\overrightarrow{F}=i\oint d\overrightarrow{r} \times \overrightarrow{B} = i \left( \iint (d\overrightarrow{S}) \cdot \nabla\right) \overrightarrow{B} 
+\end{equation*}
+
+
+Pero $i\iint d\overrightarrow{S} = \overrightarrow{m}$ es el momento magnético del lazo, entonces resulta finalmente: 
+
+\begin{equation*}
+\overrightarrow{F_{m}}=(\overrightarrow{m}\cdot\nabla)\overrightarrow{B} 
+\end{equation*}
+
+Puesto que, desde la perspectiva de la electrodinámica de medios continuos, todo momento magnético equivale a un lazo de corriente adecuadamente definido, se obtiene el resultado buscado (Kompaneyets, 1978, volumen 2; Landau y Lifshitz, 1960, volumen 8).

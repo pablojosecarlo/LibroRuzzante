@@ -1,0 +1,462 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Masters/Doctoral Thesis 
+% LaTeX Template
+% Version 2.3 (25/3/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Version 2.x major modifications by:
+% Vel (vel@latextemplates.com)
+%
+% This template is based on a template by:
+% Steve Gunn (http://users.ecs.soton.ac.uk/srg/softwaretools/document/templates/)
+% Sunil Patel (http://www.sunilpatel.co.uk/thesis-template/)
+%
+% Template license:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+11pt, % The default document font size, options: 10pt, 11pt, 12pt
+%oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
+%chapterinoneline,% Have the chapter title next to the number in one single line
+%english, % ngerman for German
+spanish,
+singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
+%draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
+%nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
+%liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
+%toctotoc, % Uncomment to add the main table of contents to the table of contents
+parskip, % Uncomment to add space between paragraphs
+%nohyperref, % Uncomment to not load the hyperref package
+headsepline, % Uncomment to get a line under the header
+]{MastersDoctoralThesis} % The class file specifying the document structure
+
+\usepackage{amsfonts} %para que funcionen los fonts raros de las fórmulas como \mathfrak{}  etc
+\usepackage{amsmath} %para integrales y otras cosas
+\usepackage{textcomp} %para el símbolo de grado celsius
+\usepackage{enumerate} %para hacer listas enumeradas con números y letras
+\usepackage{xcolor} %para darle colores al texto
+\usepackage{float} %creo que era para fijar las imágenes
+\usepackage{empheq} %para fórmulas, permite usar llaves y símbolos grandes
+\usepackage{nccmath} %para fórmulas, permite usar fracciones grandes como en los limites de las integrales \mfrac{.}{.}
+
+\usepackage{mathabx} %permite usar \centerdot y redefine muchos símbolos matemáticos
+%\usepackage{amsfonts} %permite usar \mathbb{R} para indicar los numeros reales etc
+
+\usepackage{relsize} %para hacer los símbolos matemáticos mas grandes  \mathlarger{ }
+\usepackage{graphicx} % para usar \scalebox{1.5}{...}
+
+\newcommand{\fullref}[1]{\ref{#1} de la página \pageref{#1}} %para definir un nuevo comando
+
+\newcommand{\ten}[1]{\bar{\bar{#1}}}  %para definir el tensor con dos rayitas arriba
+\newcommand{\dP}[2]{\dfrac{\partial #1}{\partial #2}}
+\newcommand{\dPv}[2]{\dfrac{\partial \overrightarrow{#1}}{\partial #2}}
+\newcommand{\dT}[2]{\dfrac{d#1}{d#2}}
+\newcommand{\dTv}[2]{\dfrac{d\overrightarrow{#1}}{d#2}}
+\newcommand{\V}[1]{\overrightarrow{#1}}
+\newcommand{\Rot}[2]{\nabla\times\overrightarrow{#1}_{#2}(t, \overrightarrow{r})}
+\newcommand{\Roto}[2]{\nabla_{0}\times\overrightarrow{#1}_{#2}(\omega, \overrightarrow{r}_{0})}
+\newcommand{\Bb}[1]{\mathlarger{\mathlarger{\mathlarger{#1}}}}
+\newcommand{\lv}[1]{\vert \overrightarrow{#1} \vert}
+\newcommand{\qa}[1]{#1(#1 + 1)}
+
+\newcommand{\expB}[1]{\mathlarger{\mathlarger{e}}^{#1}}
+
+\newcommand{\Rotor}[1]{\overrightarrow{\nabla}\times\overrightarrow{#1}}
+\newcommand{\Diver}[1]{\overrightarrow{\nabla}\cdot\overrightarrow{#1}}
+\newcommand{\Div}{\overrightarrow{\nabla}\cdot}
+
+%----------------------------------------------------------------------------------------
+%	INFORMACIÓN DE LA MEMORIA
+%----------------------------------------------------------------------------------------
+
+\thesistitle{Escáner de campos magnéticos superficiales para detección de fallas en soldaduras de aceros} % El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
+
+%\degree{Especialista en Sistemas Embebidos} % Nombre del grado, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \degreename
+
+\author{Dr. José Ruzzante} %\authorname   /para el pdf
+% Tu nombre, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \authorname
+
+\supervisor{Dr. Daniel Fabián Rodríguez (CNEA, FIUBA, UNSAM)} % El nombre del director, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \supname
+\juradoUNO{Esp. Santiago Germino (FIUBA)} % Nombre y pertenencia del un jurado se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \jur1name
+\juradoDOS{Esp. Rodrigo Alejandro Tirapegui (ITBA, FIUBA)} % Nombre y pertenencia del un jurado se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \jur2name
+\juradoTRES{Esp. Esteban Daniel Volentini (UNT, FIUBA)} % Nombre y pertenencia del un jurado se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \jur3name
+\fechaINICIO{septiembre de 2019}
+\fechaFINAL{julio de 2020}
+
+\subject{Memoria del Trabajo Final de la Carrera de Especialización en Sistemas Embebidos de la UBA} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
+\keywords{Sistemas Embebidos, CESE, FIUBA} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
+\university{Universidad de Buenos Aires} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
+\faculty{{Facultad de Ingeniería}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
+\department{Departamento de Electrónica} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
+\group{{Laboratorio de Sistemas Embebidos}} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
+
+
+%\hypersetup{pdftitle=\ttitle} % Set the PDF's title to your title
+%\hypersetup{pdfauthor=\authorname} % Set the PDF's author to your name
+%\hypersetup{pdfkeywords=\keywordnames} % Set the PDF's keywords to your keywords
+
+
+%\newcaptionname{spanish}{\acknowledgementname}{Agradecimientos}
+%\newcaptionname{spanish}{\authorshipname}{Declaración de Autoría}
+%\newcaptionname{spanish}{\abbrevname}{Glosario}
+%\newcaptionname{spanish}{\byname}{por}
+%
+%\renewcommand{\lstlistingname}{Código}% Listing -> Algorithm
+%\renewcommand{\lstlistlistingname}{Índice de \lstlistingname s}% List of Listings -> List of Algorithms
+%
+%\renewcommand{\listtablename}{Índice de Tablas}
+%\renewcommand{\tablename}{Tabla} 
+
+\addtolength{\footnotesep}{2mm} % Espacio adicional en los footnotes
+
+\DeclareUnicodeCharacter{00A0}{~} %declaro esto para que no tire la bronca con este caracter invisible
+\DeclareUnicodeCharacter{2212}{-} %también hay bronca con el signo menos
+\DeclareUnicodeCharacter{10073D}{$\alpha$}
+\DeclareUnicodeCharacter{10072A}{$H$}
+
+%\DeclareUnicodeCharacter{10072A}{$\centerdot$}
+
+\begin{document}
+
+%\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+%\pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
+\pagestyle{empty}
+%----------------------------------------------------------------------------------------
+%	CARÁTULA
+%----------------------------------------------------------------------------------------
+
+%\begin{titlepage}
+\begin{center}
+
+
+%\includegraphics[width=0.9\textwidth]{./Figures/MMM_dispersion}
+\vspace{10cm}
+
+{\fontsize{20}{24}\selectfont \textsc{\bfseries Temas de}} 
+\vspace{2.0cm} \\ 
+{\fontsize{35}{37}\selectfont \textsc{\bfseries Magnetismo }}
+\vspace{30px} \\ 
+{\fontsize{37}{37}\selectfont \textsc{\bfseries y }}
+\vspace{30px}\\ 
+{\fontsize{35}{37}\selectfont \textsc{\bfseries Superconductividad }}
+
+
+%\textsc{\Large Memoria del Trabajo Final}\\[1cm] % Thesis type
+\vspace{0.5cm}
+%{\huge \bfseries \ttitle \par}
+
+
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.60\textwidth]{./Figures/tapaLibro}
+ \end{figure}
+
+%\vfill
+
+\vspace{1.5cm}
+Ruzzante \\ %\authornameUno
+Alonso Castillo \\ %\authornameUno
+Suárez Antola \\
+
+\vspace{4.5cm}
+
+\large
+%{Director:} \\
+%{\supname} % Supervisor name
+ 
+%\vspace{1cm}
+%Jurados:\\	
+%\jurunoname\\
+%\jurdosname\\
+%\jurtresname
+
+%\vspace{1.5cm}
+
+
+\end{center}
+%\end{titlepage}
+
+
+
+%segunda página
+\newpage
+\begin{flushleft}
+\begin{small}
+
+\vspace{10.0cm} 
+
+\vfill
+
+\textit{Temas de \\ Magnetismo y Superconductividad \\
+by \\
+José Ruzzante, \\ %\authornameUno
+Pablo Alonso Castillo and \\ %\authornameUno
+Roberto Suárez Antola}
+\vspace{5mm} 
+
+\textit{Copyright} \textcopyright 2020 by the authors
+\vspace{5mm} 
+
+\textbf{ISBN:} \\
+\textit{Printed in Argentina}
+\vspace{5mm} 
+
+Published by the authors\\ 
+Alsina 2795, Florida (1602),\\
+Buenos Aires.\\
+Argentina.\\
+(54)9 11 3483 8615
+\vspace{5mm} 
+
+Direct Inquires and/or orders to the above address\\
+\vspace{5mm} 
+All rights reserved. Except for use in a review, no\\
+portion of this book may be reproduced in any form\\
+without the express written permission of the publisher.\\
+\vspace{5mm} 
+Neither the authors not the publishers assumes\\
+any responsability for the use or misuse of\\
+information contained in this book.\\
+
+
+\end{small}
+\end{flushleft} 
+
+%otra página
+\frontmatter %Inicia la numeración en números romanos
+\begin{titlepage}
+\begin{center}
+
+
+%\includegraphics[width=0.9\textwidth]{./Figures/MMM_dispersion}
+\vspace{10cm}
+
+{\fontsize{20}{24}\selectfont \textsc{\bfseries Temas de}} 
+\vspace{4.0cm} \\ 
+{\fontsize{35}{37}\selectfont \textsc{\bfseries Magnetismo }}
+\vspace{30px} \\ 
+{\fontsize{37}{37}\selectfont \textsc{\bfseries y }}
+\vspace{30px}\\ 
+{\fontsize{35}{37}\selectfont \textsc{\bfseries Superconductividad }}
+
+\vspace{1.5cm}
+Colección de temas al estado del arte en magnetismo y superconductividad con aplicaciones de física pura, química, ciencia de materiales, ensayos industriales y biología. 
+
+\vspace{1.5cm}
+
+%\textsc{\Large Memoria del Trabajo Final}\\[1cm] % Thesis type
+%\vspace{1.5cm}
+%{\huge \bfseries \ttitle \par}
+
+%\vspace{0.4cm} % Thesis title
+
+%\vfill
+
+\vspace{1.5cm}
+\LARGE\textbf{Autores:}\\
+Dr. José Ruzzante \\ %\authornameUno
+Esp. Pablo Alonso Castillo \\ %\authornameUno
+Dr. Roberto Suárez Antola \\
+
+\vspace{4.5cm}
+
+\large
+%{Director:} \\
+%{\supname} % Supervisor name
+ 
+%\vspace{1cm}
+%Jurados:\\	
+%\jurunoname\\
+%\jurdosname\\
+%\jurtresname
+
+%\vspace{1.5cm}
+
+\textit{Buenos Aires 2020}
+\end{center}
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	RESUMEN - ABSTRACT 
+%----------------------------------------------------------------------------------------
+
+%\begin{abstract}
+%\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+%
+%%
+%%The Thesis Abstract is written here (and usually kept to just this page). The page is kept centered vertically so can expand into the blank space above the title too\ldots
+%\centering
+%
+%El Magnetismo y la superconductividad han . . . . .  . 
+%
+%\end{abstract}
+
+
+%----------------------------------------------------------------------------------------
+%	CONTENIDO DE LA MEMORIA  - AGRADECIMIENTOS
+%----------------------------------------------------------------------------------------
+
+%\begin{acknowledgements}
+%\addchaptertocentry{\acknowledgementname} % Descomentando esta línea se puede agregar los agradecimientos al índice
+%\vspace{1.5cm}
+%
+%Quiero agradecer  . . . . . 
+%  
+%
+%\end{acknowledgements}
+
+\chapter*{ }
+
+{\larger
+
+\hspace{20mm}Tres clases hay de ignorancia: no saber lo que debiera saberse, saber mal lo que se sabe, y saber lo que no debiera saberse. Si juzgamos el amor por la mayor parte de sus efectos, se parece más al odio que a la amistad. Si no tenemos paz dentro de nosotros, de nada sirve buscarla fuera
+
+\vspace{10mm}
+\hspace{7.6cm} François de La Rochefoucauld
+
+
+%\hspace{20mm}Pocas honras en la vida han sido para mi mayores que la de poder presentar a ustedes esta obra que constituye un verdadero aporte a la formación de los científicos y profesionales en tan diversas áreas como las ciencias exactas, la ingeniería y la biología. En este opus encontrarán, claramente explicados fenómenos, que no por conocidos o publicitados, se encuentren fácilmente en la literatura especializada. Estos temas que constituyen algunos de los pilares de la ciencia y tecnología actuales  han sido resumidos y sistemáticamente expuestos para que el lector avezado, partiendo de los fundamentos mínimos, pueda avanzar hacia la comprensión cabal de los mecanismos subyacentes del magnetismo y la superconductividad. La confío a sus manos con el íntimo convencimiento y satisfacción de que la encontrarán tanto de apasionante interés como de suma utilidad.
+
+%\vspace{10mm}
+%\hspace{7.6cm} G.G.J. H\"afelfinger Kontus
+}
+
+\chapter*{Prefacio}
+
+
+{\larger
+\hspace{20mm} Este libro se originó como una serie de disertaciones en conferencias y cursos de posgrados que los autores realizaron para . . . .
+}
+
+\chapter*{Palabras de los autores}
+
+
+\hspace{20mm}Toda obra lleva consigo el potencial de influir en los hombres y de perdurar en el tiempo. No pretendo tanto como esto, sino tan solo poder ayudar con mi pequeña contribución a facilitar  algunos temas y dar herramientas para que se tenga una comprensión más acabada de estos fenómenos y sus fundamentos. La capacidad de integrar conocimientos es una rara cualidad que permite grandes avances en áreas poco relacionadas y es cada día mas necesaria por cuanto las fuertes especializaciones a las que ha tendido desde hace décadas la formación universitaria, tienden a producir una visión de túnel en tanto que hemos ingresando a una etapa donde el conocimiento y el progreso se fraguan ampliando la visión y coordinando conocimientos entre distintas áreas. Llegará el día en el futuro cercano en que no será viable separar las ciencias tan claramente como hasta ahora. Espero aquí, haber ayudado a facilitar ese camino.\\
+
+
+\hspace{9.0cm}Pablo J.C. Alonso Castillo.\\
+
+\vspace{10mm}
+
+%Sic transit gloria mundi.\\
+
+\hspace{9.0cm}José Ruzzante.\\
+
+\vspace{10mm}
+	
+	
+%Ibidem \\
+
+\hspace{9.0cm}Roberto Suárez Antola.\\
+
+\vspace{10mm}
+
+
+
+
+\chapter*{Biografias}
+
+\begin{sloppypar}
+
+
+$\centerdot$ \textbf{José E. Ruzzante}; es Licenciado en Física, por la Facultad de Ciencias Exactas y Naturales, de la Universidad de Buenos Aires, y recibido de Doctor en Física en la Universidad Nacional de La Plata, Argentina. Se especializó en Emisión Acústica en el CISE, Milán - Italia. Fue Director Científico del “International Centre for Earth Sciences” (ICES) que pertenece a la Comisión Nacional de Energía Atómica (CNEA) y a la Universidad Nacional de Cuyo (UNC), Mendoza – Argentina. Participó, junto a otros dos autores, en la escritura del libro "Ultrasonido y Emisión Acústica para Ingenieros y Estudiantes de Ingeniería", accesible desde: \url{https://www.researchgate.net/publication/341655775_"Ultrasonido-y-Emision Acustica-para-Ingenieros-y-Estudiantes-de-Ingenieria"}. y publicó el libro "Ondas elásticas en sólidos" ISBN 978-987-86-6502-3.
+ Actualmente es:  Miembro Fundador del Grupo Latinoamericano de Emisión Acústica (GLEA);  Profesor Consulto de la Universidad Tecnológica Nacional (UTN);  Instructor ASME (American Society of Mechanical Engineers); Profesor Titular en la Universidad Nacional de Tres de Febrero (UNTREF) en la carrera de Ingeniería en Sonido;  Responsable del Grupo de Investigación en Acústica Subacuática (GIAS) de la misma Universidad.
+ 
+$\centerdot$ \textbf{Roberto Suárez Antola}; es Licenciado en Física, Magíster en Biofísica y Doctor en Ciencias Biológicas por la Universidad de la República de Uruguay (UdelaR).  Además posee formación en medicina adquirida en la Facultad de Medicina de UdelaR. Se especializó en ingeniería nuclear, a nivel de posgrado, en la Facultad de Ingeniería de la Universidad de Buenos Aires. Efectuó estudios de profundización en algunos temas de ciencias fisicomatemáticas e ingeniería en Alemania, Austria, España, Francia e Inglaterra.
+Fue Profesor Titular y Director de Carrera en UdelaR y en la Universidad Católica del Uruguay. Dirigió los laboratorios de la Comisión Nacional de Energía Atómica y de la Dirección Nacional de Tecnología Nuclear del Ministerio de Industria, Energía y Minería (MIEM). Actualmente es Asesor en el MIEM de Uruguay. Compartió un premio de la Academia Nacional de Medicina, un premio Génesis del MIEM y un premio de la Academia Nacional de Ingeniería de Uruguay. Es autor de un libro sobre energía nuclear y un libro sobre teoría de la relatividad. Publicó artículos de investigación y capítulos de libro en temas de ciencias físico matemáticas, ingeniería y ciencias biomédicas.
+
+$\centerdot$ \textbf{Pablo J.C. Alonso Castillo}; es Licenciado en Física, por la Facultad de Ciencias Exactas y Naturales, Ingeniero Electricista y Especialista en Sistemas Embebidos por la Facultad de Ingeniería, todas de la Universidad de Buenos Aires. Es Profesor Universitario  por la Facultad de Psicología y Pedagogía de la Universidad del Museo Social Argentino. Realizó estudios en los EE.UU., Trabajó como Ingeniero de Campo y Desarrollador de firmware y software para aplicaciones nucleares. Trabaja desde el año 2003 para la Comisión Nacional de Energía Atómica (CNEA), Lideró los desarrollos de diversos proyectos en el área de Plasmas, olfatometría electrónica, espectrometría y monitoreo remoto. Es el responsable del Laboratorio de Espectrometría de Movilidad Iónica (LEMI). Desde el año 2014 es el Secretario Académico del Instituto de Formación Técnica Superior N°14 del GCBA.
+
+\end{sloppypar}
+
+
+%----------------------------------------------------------------------------------------
+%	CONTENIDO DE LA MEMORIA  - DEDICATORIA
+%----------------------------------------------------------------------------------------
+
+\dedicatory{\textbf{. . . . Dedicado a . . . . .}}  % escribir acá si se desea una dedicatoria
+
+%----------------------------------------------------------------------------------------
+%	CONTENIDO DE LA MEMORIA  - CAPÍTULOS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{thesis} % Return the page headers back to the "thesis" style
+
+%\renewcommand{\tablename}{Tabla} %TODO eliminar esta línea
+
+% Incluir los capítulos como archivos separados desde la carpeta Chapters
+% Descomentar las líneas a medida que se escriben los capítulos
+
+\include{Chapters/Int_Magnetismo}
+\include{Chapters/Susceptibilidad}
+\include{Chapters/Paramagnetismo}
+%\include{Chapters/canje}
+\include{Chapters/Int_Ferromagnetismo}
+\include{Chapters/Sist_Nanoscopicos}
+\include{Chapters/Int_Superconductividad}
+\include{Chapters/Mag_Superficial}
+\include{Chapters/Sist_Biologicos}
+%\include{Chapters/Sobrantes}
+ 
+%----------------------------------------------------------------------------------------
+%	CONTENIDO DE LA MEMORIA  - APÉNDICES
+%----------------------------------------------------------------------------------------
+
+\appendix % indicativo para indicarle a LaTeX los siguientes "capítulos" son apéndices
+
+% Incluir los apéndices de la memoria como archivos separadas desde la carpeta Appendices
+% Descomentar las líneas a medida que se escriben los apéndices
+
+
+\include{Appendices/AppendixElectromagnetismoClasico}
+\include{Appendices/AppendixTermodinamicaDelMagnetismo}
+\include{Appendices/AppendixMetodoDeLaMemoriaMagnetica} 
+%\include{Appendices/AppendixCamposMagneticosSuperficiales}
+%\include{Appendices/AppendixLaminacionYTrenes}
+\include{Appendices/AppendixMaterialesMagneticos}
+\include{Appendices/AppendixMagnetismoEnAceros}
+
+
+
+%----------------------------------------------------------------------------------------
+%	LISTA DE CONTENIDOS/FIGURAS/TABLAS
+%----------------------------------------------------------------------------------------
+\renewcommand{\listtablename}{Índice de Tablas} %TODO eliminar esta línea
+
+\tableofcontents % Prints the main table of contents
+%
+\listoffigures % Prints the list of figures
+%
+%\listoftables % Prints the list of tables
+
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\Urlmuskip=0mu plus 1mu\relax
+\raggedright
+\printbibliography[heading=bibintoc]
+\newpage
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+\end{document}  
+ 
