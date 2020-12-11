@@ -77,7 +77,7 @@ $\centerdot$ Iniciamos este trabajo con un breve e incompleto resumen histórico
 \item \textbf{E. Rutherford en 1911} describe al átomo como compuesto por un núcleo, pequeño, de carga positiva con los electrones a cierta distancia exterior
 girando, con gran cantidad de espacio vacío La importancia de este modelo es que introducía la existencia de un nucleo atómico.
 
-\item \textbf{Modelo de Niels Bohr en 1913} supone que solo algunas órbitas de los electrones son posibles, con esta hipótesis logra explicar los espectros de emisión y absorción atómicos. Este modelo es clásico pero introduce por primera ves ideas de cuántica Supuso que los electrones solamente se podían mover en órbitas circulares definidas. Cada órbita puede ser identificada mediante un número entero \textbf{n} llamado número cuántico principal.
+\item \textbf{Modelo de Niels Bohr en 1913} supone que solo algunas órbitas de los electrones son posibles, con esta hipótesis logra explicar los espectros de emisión y absorción atómicos. Este modelo es clásico pero introduce por primera ves ideas de cuántica. Supuso que los electrones solamente se podían mover en órbitas circulares definidas. Cada órbita puede ser identificada mediante un número entero \textbf{n} llamado número cuántico principal.
 
 \item \textbf{Arnold Sommerfeld en 1916} presenta el modelo atómico de Bohr modificado donde introduce orbitas de los electrones elípticas y velocidades relativistas. La excentricidad de la orbita dio lugar al número cuántico azimutal, que establece la forma de los orbitales, se lo representa con la letra \textbf{l} y toma valores que van desde $0$ hasta $n-1$.
 
@@ -252,7 +252,7 @@ esperar penetración fuera del pozo
 3.- Efecto túnel, este fenómeno es también netamente cuántico no apreciado en la mecánica clásica, por ejemplo, si tenemos electrones confinados por una barrera de potencial, únicamente aquellos electrones que excedan en energía la barrera de potencial podrán escapar, clásicamente Si por medio de la ecuación de Schrödinger calculamos la probabilidad de encontrar un electrón del otro lado de la barrera veremos que esta probabilidad no es cero.
 
 \begin{equation}
-	\dfrac{\vert\Psi_{b}\vert^{2}}{\vert\Psi_{a}\vert^{2}} \approx e^{-2\sqrt{\dfrac{2m(V_{0}-E}){\hbar^{2}}}W} 
+	\dfrac{\vert\Psi_{b}\vert^{2}}{\vert\Psi_{a}\vert^{2}} \approx e^{-2\sqrt{\dfrac{2m(V_{0}-E)}{\hbar^{2}}}\,W} 
 \end{equation}
 
 \begin{figure}[H]
@@ -397,7 +397,7 @@ Un tema aparte es el llamado espín. Este es esencialmente cuántico y hace refe
 Al espín los podemos interpretar como el momento angular intrínseco de la partícula en reposo. Llamamos $\V{S}$ al espín del electrón y su modulo será
 
 \begin{equation}
- |\V{S}| = \sqrt{s \big(s+1\big) } \, \frac{h}{2 \pi } = \sqrt{s \big(s+1\big) } \,s\hbar 
+ |\V{S}| = \sqrt{s \big(s+1\big) } \, \frac{h}{2 \pi } = \sqrt{s \big(s+1\big) } \,\hbar 
 \end{equation}
 
 Expresión similar a la del momento orbital $|\V{L}|$, donde $s$ es el número cuántico de espín, cuyo valor es $\frac{1}{2}$ para el electrón. También se lo mide en unidades de $\hbar$.
@@ -473,7 +473,7 @@ El electrón en su orbita puede pensarse como un imán solo si $l\neq 0$, si $l=
 
 \subsection{Momento magnético del spín del electrón}
 
-Para el electrón, que tiene carga y momento angular se podría espera algo similar a lo obtenido con el momento magnético orbital Sin embargo la expresión clásica no se cumple cuánticamente y es necesario multiplicar por un factor llamado $g_{e}$  de Landé, cuyo valor según Dirac es $G_{e}=2$. Luego el momento magnético del espín es \textbf{exactamente el doble que la del electrón en su movimiento orbital}.
+Para el electrón, que tiene carga y momento angular se podría espera algo similar a lo obtenido con el momento magnético orbital Sin embargo la expresión clásica no se cumple cuánticamente y es necesario multiplicar por un factor llamado $g_{e}$  de Landé, cuyo valor según Dirac es $g_{e}=2$. Luego el momento magnético del espín es \textbf{exactamente el doble que la del electrón en su movimiento orbital}.
 
 \begin{equation}
 	\V{\mu_{S}} = g_{e} \dfrac{-e\hbar}{2m}\V{S} = -g_{e}\mu_{B}\V{S}
@@ -493,7 +493,7 @@ La proyección de este momentos magnético de espín, según una dada dirección
 
 En este caso $m_{S}=\pm \dfrac{1}{2}$, o sea que toma solo dos valores. Estamos en presencia de un imán elemental, \textbf{en la mayoría de los casos el electrón puede ser considerado como un imán elemental}.
 
-Si bien introducimos algunas ideas de la física cuántica no se realizo una demostración exacta de los resultados presentados En la mayoría de los casos los esquemas son semi cuánticos y las expresiones matemáticas también Es el momento de presentar el momentos magnéticos del electrón en su movimiento orbital y el del electrón asociado al espín Si aceptamos una hipótesis del electromagnetismo clásico que indica Los momentos angulares de partículas cargadas tiene asociado un momento magnético, cuyo sentido es opuesto al del vector momento angular. Ver figura \ref{fig:13}
+Si bien introducimos algunas ideas de la física cuántica no se realizo una demostración exacta de los resultados presentados. En la mayoría de los casos los esquemas son semi cuánticos y las expresiones matemáticas también. Es el momento de presentar el momento magnético del electrón en su movimiento orbital y el del electrón asociado al espín. Si aceptamos una hipótesis del electromagnetismo clásico que indica que los momentos angulares de partículas cargadas tienen asociado un momento magnético, cuyo sentido es opuesto al del vector momento angular. Ver figura \ref{fig:113}
 
 \begin{figure}[H]
     \centering
@@ -558,13 +558,13 @@ En general $J$ varia desde $(l-s), (l-s+1), \cdots, (l+s-1), (l+s)$ luego para u
 Analicemos como se puede realizar la suma e indaguemos si puede ser arbitrara el ángulo que forman los vectores. Para eso consideremos el siguiente esquema y aplicamos el teorema del coseno.
 
 \begin{equation}
-	J^{2}=L^{2}+S^{2}+2\,L\,S\,Cos(\alpha)
+	J^{2}=L^{2}+S^{2}-2\,L\,S\,Cos(\alpha)
 \end{equation}
 
 Los módulos de los vectores se miden en unidades de $\hbar$, luego reemplazando los módulos:
 
 \begin{equation}
-	j(j+1)=l(l+1)+s(s+1)+2\,\sqrt{l(l+1)}\,\sqrt{s(s+1)}\,Cos(\alpha)
+	j(j+1)=l(l+1)+s(s+1)-2\,\sqrt{l(l+1)}\,\sqrt{s(s+1)}\,Cos(\alpha)
 \end{equation}
 
 Por lo tanto:
@@ -587,9 +587,9 @@ Primero para $l=1$, $s=+\dfrac{1}{2}$. Calculamos los módulos de los vectores p
 	\end{aligned}
 \qquad\Longrightarrow\qquad
 	\begin{aligned}[c]
-		&\lv{J} = \qa{j}=\sqrt{\dfrac{15}{4}}=1,90\\
-		&\lv{L}=\qa{l}=\sqrt{2}=1,41\\
-		&\lv{S}=\qa{sl}=\sqrt{\dfrac{3}{4}}=0,86
+		&\lv{J} = \qa{j} = \sqrt{\dfrac{15}{4}} = 1,90\\
+		&\lv{L} = \qa{l} = \sqrt{2} = 1,41\\
+		&\lv{S} = \qa{s} = \sqrt{\dfrac{3}{4}} = 0,86
 	\end{aligned}
 \end{equation*}
 
@@ -617,7 +617,7 @@ mientras que el modulo de $\lv{J}$ es igual a $\qa{l}=\qa{\dfrac{1}{2}}=\sqrt{\d
 
 En ausencia de campo magnético externo, el momento angular total del átomo $\V{J}$ se conserva, es decir modulo y dirección constante, en tanto $\V{L}$ y $\V{S}$ rotaran al rededor de $\V{J}$. Por supuesto, para el átomo de hidrógeno con un solo electrón.
 
-Si ahora aplicamos un campo $\V{B}$ exterior débil, de manera que no rompa la interacción espín orbita (L-S) Sera $\V{J}$ quien rote alrededor del campo eterno sin romper la iteración (L-S), luego seguirán rotando $\V{L}$ y $\V{S}$ alrededor de $\V{J}$ La orientación de $\V{J}$ en el campo externo $\V{B}$  deberá cumplir con uno de los valores permitidos de $m_{j}$ Si se aumenta el campo magnético externo se rompe el acoplamiento (L-S) y dejan $\V{L}$ y $\V{S}$ de rotar alrededor de $\V{J}$. Observe la figura \ref{fig:116} 
+Si ahora aplicamos un campo $\V{B}$ exterior débil, de manera que no rompa la interacción espín orbita (L-S). Será $\V{J}$ quien rote alrededor del campo eterno sin romper la iteración (L-S), luego seguirán rotando $\V{L}$ y $\V{S}$ alrededor de $\V{J}$. La orientación de $\V{J}$ en el campo externo $\V{B}$  deberá cumplir con uno de los valores permitidos de $m_{j}$. Si se aumenta el campo magnético externo se rompe el acoplamiento (L-S) y dejan $\V{L}$ y $\V{S}$ de rotar alrededor de $\V{J}$. Observe la figura \ref{fig:116} 
 
 
 \begin{figure}[H]
@@ -630,7 +630,7 @@ Si ahora aplicamos un campo $\V{B}$ exterior débil, de manera que no rompa la i
 
 \section{Momento magnético total de un átomo libre}
 
-El momento magnético efectivo del átomo seria la suma de las componentes $\V{\mu_{L}}$ y $\V{\mu_{S}}$ Calculemos las suma de los momentos magnético que llamamos $\V{\mu_{total}}$
+El momento magnético efectivo del átomo seria la suma de las componentes $\V{\mu_{L}}$ y $\V{\mu_{S}}$. Calculemos las suma de los momentos magnético que llamamos $\V{\mu_{total}}$
 
 \begin{sloppypar}
 \begin{equation}
@@ -652,7 +652,7 @@ Esta expresión nos indica que $\mu_{total}$ es directamente opuesto a $\V{J}$, 
 \begin{itemize}
 
 
-\item Anteriormente se vio que el momento angular orbital y de espín se sumaban formando el momento magnético atómico total El momento magnético total de un átomo libre tiene tres contribuciones el momento magnético del núcleo, el momento magnético orbital más el momento magnético del electrón
+\item Anteriormente se vio que el momento angular orbital y de espín se sumaban formando el momento magnético atómico total. El momento magnético total de un átomo libre tiene tres contribuciones el momento magnético del núcleo, el momento magnético orbital más el momento magnético del electrón
 
 \item El núcleo atómico tiene carga y presenta momento magnético, este eses103veces inferior a los generados por los electrones, luego, \textbf{no se considera el momento magnético nuclear}.
 
@@ -675,7 +675,7 @@ Donde el ángulo $\hat{SJ}= \alpha$ y el ángulo $\hat{LJ}=\beta$, reemplazando 
 	g_{j}= 1 +\dfrac{\qa{l}+\qa{s}-\qa{l}}{2\qa{j}} \quad \text{como veremos seguidamente}
 \end{equation*}
 
-Como sabemos el $\mu_{total}$ no esta en la dirección de $\V{J}$ y recordando que $\V{L}$ y $\V{S}$ rotan alrededor de $\V{J}$, luego $\V{\mu}_{L}$ y $\V{L}_{S}$  también rotal alrededor de $\V{J}$. En el esquema se observa la distribución espacial de los mismos Luego si pretendemos sumarlos es adecuado descomponer $\V{\mu}_{S}$ y $\V{\mu}_{S}$ en dos componentes, una en la dirección del eje de rotación y la otra perpendicular al mismo, esta ultima, como rota, tendrá valor medio cero Por el contrario, si tendrá un valor determinado distinto de cero, aquellas que proyectamos en la dirección del eje de rotación.
+Como sabemos el $\mu_{total}$ no esta en la dirección de $\V{J}$ y recordando que $\V{L}$ y $\V{S}$ rotan alrededor de $\V{J}$, luego $\V{\mu}_{L}$ y $\V{L}_{S}$  también rotal alrededor de $\V{J}$. En el esquema se observa la distribución espacial de los mismos. Luego si pretendemos sumarlos es adecuado descomponer $\V{\mu}_{S}$ y $\V{\mu}_{S}$ en dos componentes, una en la dirección del eje de rotación y la otra perpendicular al mismo, esta ultima, como rota, tendrá valor medio cero. Por el contrario, si tendrá un valor determinado distinto de cero, aquellas que proyectamos en la dirección del eje de rotación.
 
 
 \begin{figure}[H]
@@ -685,7 +685,7 @@ Como sabemos el $\mu_{total}$ no esta en la dirección de $\V{J}$ y recordando q
 	\label{fig:118}
  \end{figure}
 
-En la figura \ref{fig:119} se observan los ángulos que se utilizaran en el desarrollo de $G_{e}$ como veremos a continuación
+En la figura \ref{fig:119} se observan los ángulos que se utilizaran en el desarrollo de $g_{e}$ como veremos a continuación
 
 \begin{figure}[H]
     \centering
@@ -733,7 +733,7 @@ Remplazando los cosenos en la ecuación:
 
 
 \section{Átomos con más de un electrón}
-Hemos avanzado bastante con el magnetismo atómico nos faltaría generalizar las ideas a átomos con más de un electrón Los átomos que nos interesa desde el punto de vista del magnetismo son llamados elementos de transición y poseen gran cantidad de electrones No se puede resolver teóricamente el sistema de varios cuerpos, ni siquiera en mecánica clásica Sin embargo es posible, con las ideas expuestas anteriormente, comprender y explicar varios fenómenos de átomos con varios electrones. O sea el estado del electrón en el átomo lo determinan cuatro números cuánticos.
+Hemos avanzado bastante con el magnetismo atómico nos faltaría generalizar las ideas a átomos con más de un electrón. Los átomos que nos interesan desde el punto de vista del magnetismo son llamados elementos de transición y poseen gran cantidad de electrones. No se puede resolver teóricamente el sistema de varios cuerpos, ni siquiera en mecánica clásica. Sin embargo es posible, con las ideas expuestas anteriormente, comprender y explicar varios fenómenos de átomos con varios electrones. O sea el estado del electrón en el átomo lo determinan cuatro números cuánticos.
 
 
 Visto lo expuesto, podríamos preguntarnos:
@@ -757,11 +757,7 @@ Para poder realizar el llenado de las capas electrónicas\footnote{El nombre de 
 \begin{itemize}
 	\item \textbf{Principio de Pauli}: en un átomo no puede haber dos electrones con los cuatro números cuánticos iguales.
 	
-Ya comentamos que en la mecánica clásica y en la cuántica las partículas admiten comportamientos
-totalmente distinto En mecánica clásica las partícula se mueven en trayectorias bien determinadas, de
-tal manera que podemos distinguir una de otra y saber en que instante se encontrara en una dada
-posición En cuántica es totalmente distinta la situación Las partícula idénticas son totalmente
-indistinguibles Esto quiere decir, de otra forma, que si en cuántica cambio una partícula por otra igual el estado cuántico no debe modificarse Si indicamos con $\Psi(1,2)$ la función de onda de un sistema donde $1$ y $2$ son las coordenadas de la primera y segunda partícula. Si intercambiamos las posiciones de las partículas el sistema sigue descripto por la misma función de onda, al menos multiplicada por una constante $\varepsilon$
+Ya comentamos que en la mecánica clásica y en la cuántica las partículas admiten comportamientos totalmente distintos. En mecánica clásica las partícula se mueven en trayectorias bien determinadas, de tal manera que podemos distinguir una de otra y saber en que instante se encontrara en una dada posición. En cuántica es totalmente distinta la situación. Las partículas idénticas son totalmente indistinguibles. Esto quiere decir, de otra forma, que si en cuántica cambio una partícula por otra igual, el estado cuántico no debe modificarse. Si indicamos con $\Psi(1,2)$ la función de onda de un sistema donde $1$ y $2$ son las coordenadas de la primera y segunda partícula. Si intercambiamos las posiciones de las partículas el sistema sigue descripto por la misma función de onda, al menos multiplicada por una constante $\varepsilon$
 
 \begin{equation*}
 	\Psi(1,2)=\varepsilon\Psi(2,1)
@@ -782,7 +778,7 @@ todas las partículas que tienen spin semientero son llamadad Fermiones y cumple
 	\Psi(1,2)=-\Psi(2,1)
 \end{equation*}
 
-Los electrones son Fermiones La mecánica cuántica impone estrictas leyes sociales (cuando interactúan entre ellas) Por ejemplo los Fermiones en sociedad deben cumplir que no pueden haber dos de ellos ( en un átomo con el mismo conjunto número cuántico. Esto es el principio de Pauli y fue demostrado a posteriori. Como vemos los fermiones son entes ermitaños, no les gustan sus semejantes, sin embargo son todos iguales, indistinguibles.	
+Los electrones son Fermiones. La mecánica cuántica impone estrictas leyes sociales (cuando interactúan entre ellas). Por ejemplo los Fermiones en sociedad deben cumplir que no pueden haber dos de ellos en un átomo con el mismo conjunto número cuántico. Esto es el principio de Pauli y fue demostrado a posteriori. Como vemos los fermiones son entes ermitaños, no les gustan sus semejantes, sin embargo son todos iguales, indistinguibles.	
 	
 	\item \textbf{Regla de Hund\footnote{Reglas de Hund: El estado fundamental de un átomo (estado de más baja energía)viene determinado por la combinación de los números cuánticos de los electrones individuales de la capa incompleta, de acuerdo con un conjunto de instrucciones denominadas reglas de Hund que proporcionan el nº cuántico compuesto J correspondiente al estado fundamental:
 \begin{itemize}	
@@ -803,7 +799,7 @@ Podemos imaginar que los átomos que constituyen la tabla periódica se van form
  \end{figure}
 
 
-Los electrones deben cumplir una serie de condiciones para ser introducidos al átomo Para ello debemos desarrollar la regla empírica de Friedrich Hund presentado en 1927 o de máxima multiplicidad, la cual nos indica como ubicar los electrones Al llenar orbitales, de igual energía, los electrones se distribuyen, siempre que sea posible, con sus espines paralelos (apuntando en la misma dirección), ya que la partícula es más estable cuando tiene electrones desapareados (spines paralelos) que cuando esos electrones están apareados (spines opuestos o antiparalelos) Dicho de otro modo, se introducen los electrones de tal manera que ocupen primeramente las regiones del átomo donde la probabilidad de encontrarlos en el espacio es mayor Veamos en el esquema un caso real y otro imposible Existen varias reglas para ir llenando los orbitales, regla de \textit{Aufbau} es una de ellas. La palabra \textit{aufbau} se refiere al verbo alemán “construir“ no es el nombre de ningún científico
+Los electrones deben cumplir una serie de condiciones para ser introducidos al átomo. Para ello debemos desarrollar la regla empírica de Friedrich Hund presentada en 1927 o de máxima multiplicidad, la cual nos indica como ubicar los electrones. Al llenar orbitales, de igual energía, los electrones se distribuyen, siempre que sea posible, con sus espines paralelos (apuntando en la misma dirección), ya que la partícula es más estable cuando tiene electrones desapareados (spines paralelos) que cuando esos electrones están apareados (spines opuestos o antiparalelos). Dicho de otro modo, se introducen los electrones de tal manera que ocupen primeramente las regiones del átomo donde la probabilidad de encontrarlos en el espacio es mayor. Veamos en el esquema un caso real y otro imposible. Existen varias reglas para ir llenando los orbitales, regla de \textit{Aufbau} es una de ellas. La palabra \textit{aufbau} se refiere al verbo alemán “construir“ no es el nombre de ningún científico
 
 \begin{figure}[H]
     \centering
@@ -812,7 +808,7 @@ Los electrones deben cumplir una serie de condiciones para ser introducidos al �
 	\label{fig:121}
  \end{figure}
 
-Al ir agregando electrones obtenemos la tabla periódica de los elementos. Vemos que el primer grupo se inicia con el $H$ y finaliza con $He$ que llena la capa $1s$ con dos electrones y es noble. Luego, el siguiente nivel $n$ comienza con el $Li$ se llena la capa $2s$ con el $Be$ y se completa la acapa $2p$ con el $Ne$ que también es noble. La capa siguiente es similar. Podemos verlo en la figura \ref{fig:122}
+Al ir agregando electrones obtenemos la tabla periódica de los elementos. Vemos que el primer grupo se inicia con el $H$ y finaliza con $He$ que llena la capa $1s$ con dos electrones y es noble. Luego, el siguiente nivel $n$ comienza con el $Li$ se llena la capa $2s$ con el $Be$ y se completa la capa $2p$ con el $Ne$ que también es noble. La capa siguiente es similar. Podemos verlo en la figura \ref{fig:122}
 
 
 \begin{figure}[H]
@@ -835,7 +831,7 @@ Si los electrones llenan por completa la capa $n$ o $l$ prefijada, tienen moment
 
 \textbf{Recordando algo de química:}
 
-Cada capa se compone de una o más subcapas, que a su vez se componen de los orbitales atómicos. Por ejemplo, la primera capa ($K$) tiene una subcapa, llamada $1s$; la segunda capa ($L$) tiene dos subniveles, llamados $2s$ y $2p$; la tercera capa ($M$) tiene $3s$, $3p$ y $3d$; la cuarta ($N$) tiene las subcapas $4s$, $4p$, $4d4 y $4f4; la quinta capa ($O$) tiene $5s$, $5p$, $5d$ y $5f$ etc.
+Cada capa se compone de una o más subcapas, que a su vez se componen de los orbitales atómicos. Por ejemplo, la primera capa ($K$) tiene una subcapa, llamada $1s$; la segunda capa ($L$) tiene dos subniveles, llamados $2s$ y $2p$; la tercera capa ($M$) tiene $3s$, $3p$ y $3d$; la cuarta ($N$) tiene las subcapas $4s$, $4p$, $4d4$ y $4f4$; la quinta capa ($O$) tiene $5s$, $5p$, $5d$ y $5f$ etc.
 
 \begin{figure}[H]
     \centering
@@ -892,21 +888,7 @@ Con la capa $M$ ($n=3$) comienzan los orbitales $d$, $l=2$: $3d$, $4d$, $5d$, et
 \end{figure}
 
 
-\subsubsection{Paramagnetismo y enlace iónico}
 
-\begin{itemize}
-	\item En general hemos hablado hasta ahora, de momentos magnéticos de átomos aislados, sabiendo que la gran mayoría de los átomos tienen momento magnético diferente de cero en comparación con los que tienen momento magnético cero. Pero la generalidad de los cuerpos están formados por moléculas y esto cambia la cosa, resultando mayor el número de sustancias solamente diamagnéticas, por el contrario, las moléculas paramagnéticas escasean. Veamos un caso que al combinarse átomos paramagnéticos para formar un sólido este resulta no ser paramagnético.
-	\item La configuración electrónica del sodio es:\\
-	\begin{equation}
-		Na: 1s^{2} 2s^{2} 2p^{6} 3s^{1}  = [Ne]3s^{1}	
-	\end{equation}		
-mientras que para el cloro es:
-	\begin{equation}
-	Cl: 1s^{2} 2s^{2} 2p^{6} 3s^{2} 3p^{5}  = [Ne]3s^{2} 3p^{5}
-	\end{equation}
-	
-vemos que para tener una estructura más estable, al sodio le sobraría un electrón y al cloro le faltaría uno. También vemos que ambos son paramagnéticos. Luego cuando se forma el $ClNa$, se crea el ion $Na^{+}$ pareciéndose al $Ne$ y el ion $Cl^{-}$ con electrónica análoga al $Ar$, por tanto debido a esta unión el compuesto $ClNa$ no es paramagnético.
-\end{itemize}
 
 
 
@@ -927,7 +909,7 @@ Habiamos visto para el átomo con un solo electrón que podíamos suponer que lo
 
 %
 
-Donde $jJ_{1}$ y $j_{2}$ son los números cuánticos correspondientes pudiendo ser enteros o semi enteros
+Donde $j_{1}$ y $j_{2}$ son los números cuánticos correspondientes pudiendo ser enteros o semi enteros
 
 \begin{equation}
 	j_{1} \quad \text{y} \quad j_{2} \; \in \; \lbrace 0,\, \frac{1}{2},\, 1,\, \frac{3}{2},\, 2,\, \ldots\, \rbrace
@@ -948,7 +930,7 @@ El número cuántico del momento angular total puede variar en pasos de a uno en
 \subsection{Momento angular total de un átomo}
 
 \begin{itemize}
-	\item \textbf{Ejemplo:} suponemos que $\V{J_{1}}=\V{L}$  y $\V{J_{2}}=\V{S}$ , luego $\V{J}=\V{L}+\V{S}$ , como vimos $j$ varia entre $\mid j_{1}-j_{2} \mid \leq j \leq \mid j_{1}+j_{2} \mid$ o sea $\mid l-\frac{1}{2} \mid \leq j \leq \mid l+\frac{1}{2} \mid$, luego $j=l\pm\frac{1}{2}$.
+	\item \textbf{Ejemplo:} supongamos que $\V{J_{1}}=\V{L}$  y $\V{J_{2}}=\V{S}$ , luego $\V{J}=\V{L}+\V{S}$ , como vimos $j$ varia entre $\mid j_{1}-j_{2} \mid \leq j \leq \mid j_{1}+j_{2} \mid$ o sea $\mid l-\frac{1}{2} \mid \leq j \leq \mid l+\frac{1}{2} \mid$, luego $j=l\pm\frac{1}{2}$.
 	\item Si $l=0$ entonces $j=\frac{1}{2}$ (estado $s$ se designa $s_{\frac{1}{2}}$).	
 	\item Si $l=1$ entonces $j=\frac{1}{2}; j=\frac{3}{2}$ (estado $p$ se designa $p_{\frac{1}{2}}; p_{\frac{3}{2}}$).
 	\item Podemos tener una imagen del fenómeno pensando que la suma se realiza de manera clásica, pero, no es tan así. Clásicamente para sumarlos deberíamos conocer el ángulo que forman los vectores y sus módulos, luego aplicar el teorema del coseno.
@@ -1069,7 +1051,7 @@ En la figura \ref{fig:Grafico10d} no se tuvieron en cuenta los casos con signos 
 	\item La aplicación de un campo magnético externo al átomo produce precesión y divide las líneas espectrales, este fenómeno es llamado efecto Zeeman.
 	\item En un átomo los niveles de energía de los electrones son afectados por una interacción interna del átomo, entre el momento magnético del spin y el momento angular orbital. Esta interacción divide las líneas espectrales, en particular en el hidrogeno como se observa en la figura \ref{fig:GraficoInterEspinOrbita}
 	\item La interacción spin-orbita es también una interacción con un campo magnético, pero interno, generado por el movimiento orbital del electrón en el propio átomo que llamamos Zeeman interno.
-	\item Si se observa las líneas espectrales delhidrogeno con alta resolución, se encuentran que son dobles poco espaciados entre sí. Este fenómeno se llama \textbf{estructura fina}.
+	\item Si se observan las líneas espectrales del hidrogeno con alta resolución, se encuentran que son dobles y poco espaciadas entre sí. Este fenómeno se llama \textbf{estructura fina}.
 	\item Cálculos aproximados demuestran que el campo magnético interno sobre el electrón seria de 0,4 Tesla
 	\item Si consideramos el momento dipolar del núcleo, de la interacción de este con el momento orbital y con el spin aparecerán subdivisiones mucho más pequeñas, conocidas como \textbf{estructura hiperfina}.
 	
@@ -1230,243 +1212,6 @@ Los electrones no apareados les dan propiedades magnéticas al elemento en el qu
 
 
 
-
-\section{Magnetismo de moléculas y compuestos químicos}
-
-Hasta ahora conocemos tanto el origen del diamagnetismo como el del paramagnetismo. Podemos decir que átomos o iones podrían ser diamagnéticos o paramagnéticos. Vimos también un ejemplo de elementos paramagnéticos que dejan de serlo cuando se unen químicamente. Nos queda por estudiar el caso de moléculas y compuestos químicos. Si bien el caso del magnetismo de las moléculas o de compuestos es complejo podemos avanzar un poco más, pues nos servirá como introducción al ferromagnetismo.
-
-\subsection{Teoría de los Orbitales Moleculares (TOM)}
-
-La TOM es una metodología de mucha utilidad para determinar las propiedades magnéticas de moléculas y la estabilidad de las mismas. Sabemos que los átomos poseen orbitales donde la probabilidad de hallar electrones es máxima. La TOM supone también, que las moléculas poseen orbitales moleculares en donde se encuentran los electrones. Se asume que los electrones se mueven bajo la influencia de todos los núcleos que componen la molécula. Los orbitales moleculares se hallan como combinación lineal de los orbitales atómicos.
-
-Si suponemos que la función de onda del orbital molecular es $\Psi$ y $\chi$ es la función de onda de los orbitales atómicos entonces:
-
-\begin{equation}
-	\Psi_{j} = \sum_{i=1}^{n}C_{ij}\chi_{i}
-\end{equation}
-
-Durante la formación de la molécula, él o los átomos y sus orbitales se acercan y comienzan a interactuar, formando los nuevos orbitales moleculares que pertenecen a la molécula en su totalidad y no a un solo átomo.
-
-\subsection{Magnetismo de moléculas y compuestos químicos}
-
-\begin{itemize}
-	\item El numero de orbitales de orbitales moleculares es igual al número de orbitales atómico que se solapan. 		
-	\item Para ir avanzando sobre el tema tomemos el ejemplo de una molécula formada por átomos iguales $H_{2}$ . En el esquema se observa los dos orbitales atómicos $1s$, que al interactuar formas los orbitales moleculares enlazante $\sigma_{1s}$ de menor energía que el antideslizante $\sigma_{1s}^{*}$ . Por supuesto, los niveles energéticos de los átomos de hidrógeno, antes de la reacción son iguales.
-	
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{./Figures/MagMolecular}
-	\caption{Magnetismo Molecular}
-	\label{fig:MagMolecular}
-\end{figure}
-
-Se llama orden de enlace ($OE$) al parámetro que indica la estabilidad de la unión. Se define como la mitad de la diferencia entre el número de electrones en los Orbitales enlazantes menos el número de electrones en los orbitales antienlazantes. Si el resultado es positivo la unión es estable
-
-\begin{equation}
-	OE=\frac{OE-OA}{2}=\frac{2-0}{2}=1
-\end{equation}
-	
-	
-	\item Si a la molécula $h_{2}$ la irradiamos con luz ultravioleta puede pasar un electrón al orbital antienlazante, absorbiendo energía con lo cual el $OE$ seria 0, luego la molécula deja de existir.
-	
-	\item Estudiemos el caso de una molécula de gas noble que no existe $hE_{2}$ en este caso será:
-
-En todos los casos se debe respetar el \textbf{Principio de Pauli}: recordemos que no puede haber dos electrones con todos sus números cuánticos iguales, en el mismo estado dentro del mismo sistema. y el \textbf{Principio de Hund} que dice: Los electrones se ubican dentro de los orbitales de la misma energía de manera que estén desapareados al máximo
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{./Figures/MagMolecularHe2}
-	\caption{Magnetismo Molecular del $He_{2}$}
-	\label{fig:MagMolecular}
-\end{figure}
-
-\begin{equation}
-	OE=\frac{OE-OA}{2}=\frac{2-2}{2}=0
-\end{equation}
-
-Luego, la molécula no es estable.
-\end{itemize}
-
-
-\subsubsection{Casos en que entra en juego el segundo nivel energético}
-
-En el caso que interactúen orbitales $2s$ el procedimiento es igual al caso anterior. En la figura, de abajo, se observa un esquema de los orbitales $s$, con n significamos el número cuántico principal, puesto que todos los $s$ serán Iguales.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{./Figures/SegundoNivelEnergetico}
-	\caption{Segundo nivel energético orbitales $s$}
-	\label{fig:SegundoNivelEnergetico}
-\end{figure}
-
-Difiere un poco cuando trabajos con los orbitales $2p$, ya que, no son esféricos y se sitúan a lo largo de los tres ejes $x$, $y$, $z$ del espacio. Para entender un poco mejor como se unen los átomos seguiremos trabajando con los orbitales. A medida que los átomos se acercan comienzan a interactuar los orbitales atómicos y forman, por combinación lineal los orbitales moleculares. Se dan distintas posibilidades según que orbitales atómicos se enfrentan. Supongamos que enfrentamos dos órbita $2p_{x}$, como indica el esquema, esta interacción dará origen a dos orbitales moleculares.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{./Figures/Molecula2doNivel1}
-	\caption{Segundo nivel energético dos orbitales $s$}
-	\label{fig:Molecula2doNivel1}
-\end{figure}
-
-En la figura \ref{fig:Molecula2doNivel2} se observa un esquema donde reaccionan dos orbitales atómicos enfrentado en la dirección $x$ mientras que en la figura \ref{fig:Molecula2doNivel3} los orbitales que reaccionan están en la dirección $y$.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{./Figures/Molecula2doNivel2}
-	\caption{Orbitales enfrentados en la dirección $x$}
-	\label{fig:Molecula2doNivel2}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{./Figures/Molecula2doNivel3}
-	\caption{Orbitales enfrentados e la dirección $y$}
-	\label{fig:Molecula2doNivel3}
-\end{figure}
-	
-	
-Algo similar sucede si los orbitales paralelos estuviesen en la dirección Z. En estos dos últimos casos los orbitales moleculares se designan con $\pi_{np_{y}}$ , $\pi_{np_{z}}$ o $\pi_{np_{y}}^{*}$ , $\pi_{np_{z}}^{*}$
-
-\subsubsection{Ejemplo: molécula del $Ni_{2}$}
-
-\begin{itemize}
-	\item Comenzamos por la configuración electrónica del Nitrógeno ($Z=7$):
-	\begin{equation}
-		1s^{2}2s^{2}2p^{1}_{x}2p^{1}_{y}2p^{1}_{z}
-	\end{equation}
-	\item Los orbitales se llenan de acuerdo a las principios de \textbf{Pauli y Hund}. 
-	\item Los orbitales atómicos tienen las mismas energía, por eso se encuentran al mismo nivel. No pasaría lo mismo si los átomos son distintos.
-	\item Los orbitales moleculares de menor enegía se llenan primero.
-	\item En este caso los orbitales enfrentados son los $2p_{z}$
-	\item \textbf{Esta molécula es diamagnética, puesto que tiene los electrones apareados, los átomos son paramagnéticos}
-	\item Si los átomo que reaccionan tiene pocos electrones, no solo hay interacción $s-s$ y $p-p$ sino que aparece otra interacción $s-p$ que modifica los niveles de los orbitales moleculares esto se observa en el esquema de la figura \ref{fig:EjemploNi2}.
-\end{itemize}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{./Figures/EjemploNi2}
-	\caption{Molécula de $Ni_{2}$}
-	\label{fig:EjemploNi2}
-\end{figure}
-
-\newpage
-
-\subsubsection{Interacción cruzada}
-
-\textbf{Para átomos con $N \leq 7 $ electrones}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{./Figures/interaccionCruzada7a}
-	\caption{Interacción cruzada $N \leq 7$}
-	\label{fig:interaccionCruzada7a}
-\end{figure}
-
-
-\textbf{Para átomos con $N>7$ electrones}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{./Figures/interaccionCruzada7b}
-	\caption{Interacción cruzada $N > 7$}
-	\label{fig:interaccionCruzada7b}
-\end{figure}
-
-
-\newpage
-\subsubsection{Caso del Oxígeno $Z=8$}
-
-
-\textbf{$O_{2}$ - Paramagnético:}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{./Figures/interaccionCruzadaOxigenoA}
-	\caption{$O_{2}$ Paramagnético}
-	\label{fig:interaccionCruzadaOxigenoA}
-\end{figure}
-
-\textbf{$O_{2}^{+}$ - Paramagnético:}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{./Figures/interaccionCruzadaOxigenoC}
-	\caption{$O_{2}^{+}$ Paramagnético}
-	\label{fig:interaccionCruzadaOxigenoC}
-\end{figure}
-
-
-\textbf{$O_{2}^{2+}$ - Diamagnético:}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth]{./Figures/interaccionCruzadaOxigenoB}
-	\caption{$O_{2}^{2+}$ Diamagnético}
-	\label{fig:interaccionCruzadaOxigenoB}
-\end{figure}
-
-
-\textbf{$O_{2}^{2-}$ - Diamagnético:}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{./Figures/interaccionCruzadaOxigenoD}
-	\caption{$O_{2}^{2-}$ Diamagnético}
-	\label{fig:interaccionCruzadaOxigenoD}
-\end{figure}
-
-\subsubsection{Compuestos de átomos distintos}
-
-Hasta ahora hemos visto moléculas di atómicas de átomos iguales, nos está faltando el magnetismo de moléculas formadas por átomos distintos. En este caso la dificultad está en que al no ser átomos iguales, estos no tienen los mismos niveles de energía. Tengamos presente que los átomos más electronegativos tienen menor energía.
-
-Los orbitales moleculares se llenan como hasta ahora teniendo en cuenta los principios de Pauli y Hund.
-
-Veamos dos casos clásicos $CO$ y $NO$.
-
-\textbf{Para el CO:}
-
-Se debe comenzar con la configuración electrónica de cada elemento
-\begin{equation}
-\begin{aligned}
-	C: He+ 2s^{2}2p^{2} \\
-	O: He+ 2s^{2}2p^{4}
-\end{aligned}
-\end{equation}
-
-No se dibujan los niveles $1s^{2}$ por ser iguales en todos los casos.
-Los niveles moleculares se observan en la figura \ref{fig:CO2Diamagnetico}:
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{./Figures/CO2Diamagnetico}
-	\caption{$CO_{2}$ Diamagnético}
-	\label{fig:CO2Diamagnetico}
-\end{figure}
-
-
-\textbf{Para el NO:}
-
-La configuración electrónica del nitrógeno es
-\begin{equation}
-	N: He+ 2s^{2}3p^{3}
-\end{equation}
-No dibujamos el vector que Indica la dirección en la que aumenta la energía pues es similar al caso anterior.
-Por tener un electrón desapareado esta molécula es paramagnética.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{./Figures/CO2Paramagnetico}
-	\caption{$CO_{2}$ Paramagnético}
-	\label{fig:CO2Paramagnetico}
-\end{figure}
-
-Tengamos presente que:
-
-\begin{itemize}
-	\item Todas las moléculas formadas por átomos distintos presentan esquemas de energía similares.
-	\item Estamos comentando solo los casos más simples, existen moléculas donde la complicación es mayor.
-	\item En todos estos casos se podría haber calculado el orden de enlace,
-\end{itemize}
 
 
 

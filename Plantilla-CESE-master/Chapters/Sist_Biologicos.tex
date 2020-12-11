@@ -26,7 +26,7 @@ En biología se trabaja con un conjunto de niveles estructurales, cada uno de lo
 En la base, un primer nivel atómico-molecular. Se estudia desde el punto de vista de la física cuántica. Generalmente se utiliza la ecuación de Schrödinger con términos que tienen en cuenta las interacciones eléctrica y magnética en los átomos y entre los átomos en las moléculas y entre las moléculas. Es el bien conocido nivel físico microscópico.
 
 Un segundo nivel corresponde a estructuras supramoleculares y sus procesos.
-Se estudian con herramientas de física estadística y de cinética física, teniendo en cuenta las interacciones eléctricas y magnéticas, así como los resultados de la investigación de las estructuras y los procesos en el nivel previo. Es el nivel físico mesoscópico. Se describen conjuntos numerosos a átomos y moléculas, cuyas dimensiones son grandes respecto de las distancias entre los átomos, pero son pequeñas respecto de las dimensiones características de los patrones de estructura (macroscópicos) que aparecen en el siguiente nivel.
+Se estudian con herramientas de física estadística y de cinética física, teniendo en cuenta las interacciones eléctricas y magnéticas, así como los resultados de la investigación de las estructuras y los procesos en el nivel previo. Es el nivel físico mesoscópico. Se describen conjuntos numerosos de átomos y moléculas, cuyas dimensiones son grandes respecto de las distancias entre los átomos, pero son pequeñas respecto de las dimensiones características de los patrones de estructura (macroscópicos) que aparecen en el siguiente nivel.
 
 Un tercer nivel, ya macroscópico, corresponde a la célula considerada como una unidad de estructura y función. Aquí se incluyen organismos unicelulares, como las bacterias.
 Los procesos a este nivel se estudian, desde un punto de vista fisicoquímico, con la ayuda de modelos basados en la termodinámica de los sistemas fuera del equilibrio.
@@ -38,7 +38,7 @@ Finalmente, un cuarto nivel que corresponde al organismo en su totalidad, con su
 
 Las ecuaciones de Maxwell con sus parámetros fenomenológicos (permitividad dieléctrica, permeabilidad magnética y conductividad eléctrica) se aplican a modelos de medios continuos polifásicos y posiblemente anisótropos.
 
-En el caso del estudio de la interacción entre un organismo y un campo eléctrico, magnético o electromagnético, por lo general no resulta factible tener en cuenta los detalles de la distribución espacial de las propiedades eléctricas del tejido. Las regiones abarcadas por las corrientes inducidas incluyen varios tipos de tejidos diferentes e interfaces entre unos y otros. En estos casos, aún con el apoyo de modelos numéricos, es necesario trabajar con valores promediados.
+En el caso del estudio de la interacción entre un organismo y un campo eléctrico, magnético o electromagnético, por lo general no resulta factible tener en cuenta los detalles de la distribución espacial de las propiedades eléctricas del tejido. Las regiones abarcadas por las corrientes inducidas incluyen varios tipos de tejidos diferentes e interfaces entre unos y otros. En estos casos, aún con el apoyo de modelos numéricos, es necesario trabajar con valores promediados \citep{Malmivuo_1995}.
 
 La aproximación más simple, aunque a menudo insuficiente, es trabajar como si el organismo fuera un conductor de volumen homogéneo e isótropo cuya conductividad es un valor promedio. No obstante, algunas veces los patrones de variación espacial de la conductividad pueden presentar regularidades o tener unas dimensiones tan pequeñas que el conductor de volumen de los tejidos puede ser definido macroscópicamente como compuesto por partes homogéneas e isótropas.
 
@@ -47,12 +47,12 @@ El siguiente paso en complejidad es, por tanto, considerar que el conductor de v
 Un modelo más realista se obtiene asumiendo que algunas de estas regiones son anisótropas.
 
 
-En la figura \ref{fig:60} vemos el Corte transversal correspondiente a un modelo de tórax polifásico, heterogéneo (diferentes resistividades en diferentes regiones) y anisótropo (diferentes resistividades según la dirección respecto a las fibras musculares esqueléticas o miocárdicas).
+En la figura \ref{fig:60}\footnote{Las figuras \ref{fig:60}, \ref{fig:61} y \ref{fig:62} son modificaciones de figuras que aparecen en Bioelectromagnetism - Principles and Applications of Bioelectric and Biomagnetic Fields \cite{Malmivuo_1995}} vemos el Corte transversal correspondiente a un modelo de tórax polifásico, heterogéneo (diferentes resistividades en diferentes regiones) y anisótropo (diferentes resistividades según la dirección respecto a las fibras musculares esqueléticas o miocárdicas).
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{./Figures/fig60}
-	\caption{Modelo de tórax polifásico,}
+	\caption{Modelo de tórax polifásico} 
 	\label{fig:60}
 \end{figure}
 
@@ -76,7 +76,7 @@ Un segundo modelo, aún más simplificado, se puede ver en corte de la figura \r
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{./Figures/fig62}
-	\caption{Modelo simplificado}
+	\caption{Modelo aún más simplificado de cavidades del corazón}
 	\label{fig:62}
 \end{figure}
 
@@ -159,7 +159,7 @@ Los magnetosomas están formados por una partícula de magnetita (ferrimagnétic
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{./Figures/magnetosoma01}
-	\caption{Bacteria procarionte con magnetosoma}
+	\caption{Bacteria procariota con magnetosoma}
 	\label{fig:magnetosoma01}
 \end{figure}
 
@@ -267,7 +267,7 @@ La componente del momento magnético del magnetosoma paralela al campo es $m\, C
 \end{equation}
 
 
-La función $\mathcal{L}(x)=Ctgh(x)-\dfrac{1}{x}$ fue introducida por Langevin\footnote{Langevin obtuvo la función $\mathcal{L}(x)$ en una investigación, empleando herramientas de física estadística clásica, de las propiedades dieléctricas de un gas ideal, cuyas moléculas poseen momentos dipolares permanentes, en un campo externo. Posteriormente extendió este enfoque al paramagnetismo (Sommerfeld, 1956).}. Si $x$ es pequeño respecto de la unidad o a lo sumo $x\lesssim 1$ , $\mathcal{L}(x)$ se comporta como $\dfrac{1}{3}x$ mientras que si es grande respecto de la unidad $\mathcal{L}(x)$  se encuentra muy próxima a $1$, comportándose como $1-\dfrac{1}{x}$.
+La función $\mathcal{L}(x)=Ctgh(x)-\dfrac{1}{x}$ fue introducida por Langevin\footnote{Langevin obtuvo la función $\mathcal{L}(x)$ en una investigación, empleando herramientas de física estadística clásica, de las propiedades dieléctricas de un gas ideal, cuyas moléculas poseen momentos dipolares permanentes, en un campo externo. Posteriormente extendió este enfoque al paramagnetismo.}. Si $x$ es pequeño respecto de la unidad o a lo sumo $x\lesssim 1$ , $\mathcal{L}(x)$ se comporta como $\dfrac{1}{3}x$ mientras que si es grande respecto de la unidad $\mathcal{L}(x)$  se encuentra muy próxima a $1$, comportándose como $1-\dfrac{1}{x}$.
 
 Así, cuando $x=10$ la función de Langevin toma un valor próximo a $0,9$, de modo que la dirección del momento magnético se encuentra en promedio muy cercana a la dirección del campo externo.
 
@@ -461,7 +461,7 @@ El aporte a la densidad de energía libre de Gibbs \ref{eq:D20} local, debida a 
 	-\dfrac{1}{2}\mu_{0}H^{2}-\mu_{0}\int_{0}^{\V{H}}\V{M} \cdot d \V{H}
 \end{equation}
 
-El segundo término del miembro de la derecha de esta ecuación se puede interpretar como el aporte debido a la magnetización local del material\footnote{Guggenheim, 1967}.
+El segundo término del miembro de la derecha de esta ecuación se puede interpretar como el aporte debido a la magnetización local del material.
 
 La magnetización se expresa como función lineal del campo $\V{H}$: $\V{M}= \bar{\bar{\chi}} \cdot \V{H}$
 
@@ -545,7 +545,7 @@ La sangre es un medio conductor iónico que se mueve a través del sistema cardi
 
 En presencia de un campo magnético externo, una fuerza de Lorentz tiende a desviar a los iones en dirección perpendicular a su velocidad de movimiento conjunto con el fluido y perpendicular al campo.
 
-Si el ion posee una carga $q$ y se mueve con velocidad $\V{v}$ en un campo magnético de inducción \overrightarrow{b}, la fuerza de Lorentz sobre el ion $\V{F}=q\V{v}\times\overrightarrow{B}$ tiende a separar las cargas de distinto signo que se encuentran en un mismo elemento de volumen y se mueven con la misma velocidad. El proceso de separación de cargas produce un campo eléctrico que se le opone.
+Si el ion posee una carga $q$ y se mueve con velocidad $\V{v}$ en un campo magnético de inducción \V{B}, la fuerza de Lorentz sobre el ion $\V{F}=q\V{v}\times\V{B}$ tiende a separar las cargas de distinto signo que se encuentran en un mismo elemento de volumen y se mueven con la misma velocidad. El proceso de separación de cargas produce un campo eléctrico que se le opone.
 
 Consideremos un modelo simplificado de una arteria, que la asimila a un tubo cilíndrico de sección circular dentro del cual fluye la sangre. La sangre es considerada, a estos efectos, como una solución electrolítica en agua.
 
@@ -815,7 +815,7 @@ Como los efectos térmicos se deben a las corrientes inducidas, y no a los campo
 La densidad de energía disipada en un punto de un conductor de volumen, que se convierte localmente en energía calorífica viene, dada en función de la densidad de corriente eléctrica inducida o del campo eléctrico local, por: $\dfrac{1}{\sigma} \cdot J^{2}= \sigma\cdot E^{2}$ fácilmente reconocible como la versión diferencial de la ley de Ohm.
 
 28
-La figura \ref{fig:68} muestra los resultados de una simulación digital de la distribución de la tasa de absorción específica dentro de la cabeza de un joven irradiado por un teléfono celular a 902 MHz\footnote{Resultados numéricos debidos a Myoung Soo Kwon (Lin, 2012).}. La tasa de absorción específica aumenta a medida que ascendemos en la barra vertical pasando del azul oscuro hasta el blanco en el extremo superior (allí la tasa de absorción específica es de $1.25 W/kg$).
+La figura \ref{fig:68} muestra los resultados de una simulación digital de la distribución de la tasa de absorción específica dentro de la cabeza de un joven irradiado por un teléfono celular a 902 MHz\footnote{Resultados numéricos debidos a Myoung Soo Kwon \citep{Lin_2012}.}. La tasa de absorción específica aumenta a medida que ascendemos en la barra vertical pasando del azul oscuro hasta el blanco en el extremo superior (allí la tasa de absorción específica es de $1.25 W/kg$).
 A la izquierda de la cabeza que aparece en la figura, a la altura del oído izquierdo, se puede apreciar la ubicación del teléfono celular y su antena.
 
 \begin{figure}[H]
@@ -1476,7 +1476,7 @@ La familia de curvas que se van alejando del eje de sensibilidad cero y que en u
 \end{figure}
 
 
-Para la posición de la bobina que muestra la figura \ref{fig:616}, la sensibilidad escalar se puede estimar por la siguiente fórmula donde, por definición $k^{2}=\dfrac{4r_{0}r}{h^{2}+(r_{0}+r)^{2}}$, mientras $K(k)$ y $E(k)$ son, respectivamente, integrales elípticas completas de primera y segunda especie\footnote{La fórmula se obtiene a partir de la expresión para el potencial vector inducido por una corriente $i_{b}(t)$ en los devanados de una bobina circular (Nikolski, 1985; Malmivuo y Plonsey, 1995).}
+Para la posición de la bobina que muestra la figura \ref{fig:616}, la sensibilidad escalar se puede estimar por la siguiente fórmula donde, por definición $k^{2}=\dfrac{4r_{0}r}{h^{2}+(r_{0}+r)^{2}}$, mientras $K(k)$ y $E(k)$ son, respectivamente, integrales elípticas completas de primera y segunda especie\footnote{La fórmula se obtiene a partir de la expresión para el potencial vector inducido por una corriente $i_{b}(t)$ en los devanados de una bobina circular \citep{Nikolski_1976} \citep{Malmivuo_1995}}
 
 \begin{equation}
 	\label{eq:624}
@@ -1499,7 +1499,7 @@ La fórmula \ref{eq:625}: $\V{\Bb{\varepsilon}}_{b}(\V{r})= -\dfrac{1}{2\pi} \le
 
 En otros casos las bobinas se ubican ortogonales entre sí o del mismo lado y paralelas, compartiendo un mismo eje para formar un gradiómetro que permite atenuar gradientes espaciales no deseados en el campo magnético.
 
-En la figura \ref{eq:619} se comparan el campo de derivación magnética de un par de bobinas opuestas (dibujo en el medio) con el campo de derivación eléctrica de un par de electrodos opuestos (dibujo de la izquierda), ubicados en un conductor de volumen esférico.
+En la figura \ref{fig:619} se comparan el campo de derivación magnética de un par de bobinas opuestas (dibujo en el medio) con el campo de derivación eléctrica de un par de electrodos opuestos (dibujo de la izquierda), ubicados en un conductor de volumen esférico.
 
 
 \begin{figure}[H]
@@ -1509,7 +1509,7 @@ En la figura \ref{eq:619} se comparan el campo de derivación magnética de un p
 	\label{fig:619}
 \end{figure}
 
-La tensión que aparece entre los electrodos se expresa como una integral de volumen del producto escalar de la densidad local de corriente $\V{J^{i}_{T}}(t, \V{r})$ por el vector local del campo de derivación eléctrica (Malmivuo, 2000; Suárez-Antola 2007 (a) y (b)).
+La tensión que aparece entre los electrodos se expresa como una integral de volumen del producto escalar de la densidad local de corriente $\V{J^{i}_{T}}(t, \V{r})$ por el vector local del campo de derivación eléctrica \citep{Malmivuo_2000} \citep{5627910} \citep{Antola:1} .
 
 La superposición de ambos campos, que se puede ver en el dibujo de la derecha, pone en evidencia la diferencia en la geometría de uno y otro campo, a lo que se añade la diferencia en sus magnitudes.
 
