@@ -24,8 +24,9 @@ El descubrimiento de que algunos materiales perdían su resistencia eléctrica a
 
 Antes del descubrimiento y desarrollo de materiales de HTS (Alta Temperatura de Superconducción), el uso de la superconductividad no había sido práctico ni económico para aplicaciones comerciales, excepto para las aplicaciones de imágenes de resonancia magnética (MRI) y de almacenamiento de energía magnética superconductora (SMES), principalmente porque los superconductores disponibles comercialmente de LTS (Baja Temperatura de Superconducción) se hacen superconductores solo cerca del 0K. Aunque es tecnológicamente posible enfriar materiales LTS a una temperatura a la que se vuelven superconductores, la comercialización de materiales LTS no ha sido exitosa debido al alto costo asociado con el proceso de enfriamiento. Por ejemplo, el helio líquido, que se puede usar para enfriar materiales a aproximadamente $4^{o}K$ ($-269^{o}C$), y que se ha usado comúnmente para enfriar materiales LTS, es caro y sumamente costoso de mantener.
 
-En la actualidad el superconductor HTS de mayor temperatura es el ${gBa_{2}Ca_{2}Cu_{3}O_{8}}$ o más sintéticamente $Hg-1223$, de estructura cristalina tetragonal y de temperatura de superconductividad de $134^{o}K$ ($-139^{o}C$) temperatura fácilmente alcanzable con aire líquido (punto de fusión: $-216.2^{o}C$, punto de ebullición: $-194.35^{o}C$)
-
+\begin{sloppypar}
+En la actualidad el superconductor HTS de mayor temperatura es el ${HgBa_{2}Ca_{2}Cu_{3}O_{8}}$ o más sintéticamente $Hg-1223$, de estructura cristalina tetragonal y de temperatura de superconductividad de $134^{o}K$ ($-139^{o}C$) temperatura fácilmente alcanzable con aire líquido (punto de fusión: $-216.2^{o}C$, punto de ebullición: $-194.35^{o}C$)
+\end{sloppypar}
 
 \section{Conductividad clásica}
 \label{sec:pruebasHW}
@@ -75,13 +76,13 @@ El aumento lineal de la resistividad depende de $\rho_{R}$ ya que $\rho_{T}$ per
 
 \subsubsection{Conductividad y trabajo mecánico}
 
-En el esquema de la figura \ref{fig:44} se puede observar la curva de un recocido anisotérmico para níquel trabajado en frio, se ve la curva correspondiente a la recuperación y recristalización del material (curva en azul),también se trazaron la dureza (negro) y densidad (rojo), donde queda de manifiesto la importancia del trabajado mecánico y restauración del material sobre la resistividad del mismo. Vemos que el cambio fundamental en la dureza ocurre simultáneamente con la recristalización de la matriz. Se comprueba que el aporte de las dislocaciones es muy pequeño comparado con lo que aportan los defectos puntuales.
+En el esquema de la figura \ref{fig:44a} se puede observar la curva de un recocido anisotérmico para níquel trabajado en frio, se ve la curva correspondiente a la recuperación y recristalización del material (curva en azul),también se trazaron la dureza (negro) y densidad (rojo), donde queda de manifiesto la importancia del trabajado mecánico y restauración del material sobre la resistividad del mismo. Vemos que el cambio fundamental en la dureza ocurre simultáneamente con la recristalización de la matriz. Se comprueba que el aporte de las dislocaciones es muy pequeño comparado con lo que aportan los defectos puntuales.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{./Figures/fig43}
 	\caption{Recocido anisotérmico para $Ni$}
-	\label{fig:44}
+	\label{fig:44a}
 \end{figure}
 
 
@@ -306,13 +307,13 @@ Con $R$ y $L$ representamos la resistencia y la inductancia del circuito. Resolv
 
 Entendemos por conductor perfecto, un material que obedece a la ley de Ohm pero con resistencia despreciable. Suponemos un conductor perfecto por el que circula una densidad de corriente finita J , y puesto que cumple con la ley de Ohm: $\V{J}=\sigma \V{E}$
 
-Como el conductor es perfecto cuando $\sigma\rightarrow \infty$ Entonces el campo $\overrightarrow{E}$ tiende a 0 pues, de lo contrario la densidad de corriente sería infinita. Por la ley de Faraday:
+Como el conductor es perfecto cuando $\sigma\rightarrow \infty$. Entonces el campo $\overrightarrow{E}$ tiende a 0 pues, de lo contrario la densidad de corriente sería infinita. Por la ley de Faraday:
 
 \begin{equation}
 	\nabla \times \V{E}= -\frac{d\V{B}}{dt} = 0 \rightarrow \V{B} = Ctte
 \end{equation}
 
-En el interior de un conductor perfecto $\V{B} = Ctte$ Veamos en qué se diferencia un conductor perfecto de un superconductor.
+En el interior de un conductor perfecto $\V{B} = Ctte$. Veamos en qué se diferencia un conductor perfecto de un superconductor.
 
 \subsubsection{Enfriamiento con y sin campo B}
 
@@ -343,7 +344,7 @@ Las corrientes de protección o apantallamiento de la superficie también están
 \subsubsection{Preguntas}
 
 \begin{itemize}
-	\item Razonando sobre el esquema de los cilindros superconductores, vimos que en cualquiera de los dos casos; colocando el campo antes o después de enfriar el campo es cero ($B=0$) en el superconductor. La explicación por la aparición de una súper corriente que anula el campo aplicado en el interior del metal. Si ahora anulamos el campo aplicado siempre a ($T<T_{c}$) la súper corriente tendría que oponerse a esta modificación y Eternamente tendríamos un campo y una corriente en el superconductor, ¿es correcto?.
+	\item Razonando sobre el esquema de los cilindros superconductores, vimos que en cualquiera de los dos casos; colocando el campo antes o después de enfriar el campo es cero ($B=0$) en el superconductor. La explicación por la aparición de una super corriente que anula el campo aplicado en el interior del metal. Si ahora anulamos el campo aplicado siempre a ($T<T_{c}$) la super corriente tendría que oponerse a esta modificación y eternamente tendríamos un campo y una corriente en el superconductor, ¿es correcto?.
 	
 	\item Pasemos el diagrama del conductor perfecto. Vimos que un conductor real tarda un tiempo igual a $\tau=R/L$ para extinguir la corriente inducida, ¿En un conductor perfecto tardaría un tiempo infinito en desaparecer?. ¿Luego, nunca se extinguiría? y ¿Cuánto tiempo tardaría en establecerse la corriente de apantallamiento?
 	
@@ -376,7 +377,7 @@ Cómo fue visto existe una relación entre el campo magnético crítico y la tem
 \end{figure}
 
 
-Existen también superconductores duros o tipo II, Se caracterizan por valores muy altos de los campos críticos y por una temperatura crítica mayor. Veamos alguna aclaración sobre energía superficial; la gran mayoría de los materiales tiene una energía superficial positiva, esto quiere decir, qué se debe invertir energía para formar una nueva superficie del material. Por el contrario si la energía superficial fuera negativa sería muy simple partir un material. Un estudio de Abrikosov (1957) sugirió que podría existir un tipo de superconductor con energía superficial negativa lo cual indicaría bajo ciertas condiciones espontáneamente se formarían superficies que separarían la parte normal de la superconductora en el material. De esta manera se la aparición del Estado mixto en un superconductor tipo II. Luego, el material superconductor se subdivide en una sucesión de regiones normales y superconductores cuyas fronteras son paralelas al campo magnético aplicado.
+Existen también superconductores duros o tipo II. Se caracterizan por valores muy altos de los campos críticos y por una temperatura crítica mayor. Veamos alguna aclaración sobre energía superficial; la gran mayoría de los materiales tiene una energía superficial positiva, esto quiere decir, qué se debe invertir energía para formar una nueva superficie del material. Por el contrario si la energía superficial fuera negativa sería muy simple partir un material. Un estudio de Abrikosov (1957) sugirió que podría existir un tipo de superconductor con energía superficial negativa lo cual indicaría bajo ciertas condiciones espontáneamente se formarían superficies que separarían la parte normal de la superconductora en el material. De esta manera se la aparición del estado mixto en un superconductor tipo II. Luego, el material superconductor se subdivide en una sucesión de regiones normales y superconductores cuyas fronteras son paralelas al campo magnético aplicado.
 
 \subsection{Superconductores duros (tipo II)}
 
@@ -639,7 +640,7 @@ C_{s}-C_{n}=-\mu_{0}T\left( \mfrac{dH_{c}(T)}{dT} \right)^{2}_{T=T_{c}}
 
 
 
-Expresión que nos da la diferencia en el calor específico durante el Cambio de fase del estado superconductor al normal con campo 0, o sea, durante la transformación de segundo orden llamada \textbf{fórmula de Rutgers}.
+Expresión que nos da la diferencia en el calor específico durante el cambio de fase del estado superconductor al normal con campo 0, o sea, durante la transformación de segundo orden llamada \textbf{fórmula de Rutgers}.
 
 También si recordamos que: $H_{c}=f(T_{c})=H_{0}\left(1-\frac{T^{2}}{T_{c}^{2}} \right)$ será:
 
@@ -728,8 +729,7 @@ Este comportamiento no crea inconvenientes en las aplicaciones comunes de los su
 
 \subsection{Teoría de los dos fluidos}
 
-En 1908 Heike K. Onnes Puedo licuar helio, aunque no consiguió solidificarlo, hecho que sucedió en 1926, en 1911 descubre la superconductividad. Si los avances experimentales para obtener bajas temperaturas No se podría haber descubierto la superconductividad. La primera descripción teórica (clásica) sobre el tema fue propuesta en 1935 por los hermanos London. Interesante destacar la esencia de estos hechos: una realización experimental permite el descubrimiento de un nuevo fenómeno, el cual conlleva a una propuesta teórica. Sin embargo, No termina allí la secuencia. El helio líquido, logrado primitivamente por Onnes, demostró tener propiedades especiales, tal es así, qué en 1937 Piotr Kapitsa (se hizo famoso en 1946 al enfrentarse a Stalin y no querer trabajar en el desarrollo de armas nucleares), descubre la superfluidez del helio. Dicho de otro modo, ausencia de viscosidad, lo cual, vence cualquier intento de ser contenido en un recipiente, El helio escapa del vaso que intenta contenerlo.
-Anteriormente, en el tema de la magnetorresistencia, concretamente en conducción eléctrica, sin mencionarlo específicamente hablamos de la \textbf{ley de Drude}. el modelo supone que el campo eléctrico ejerce una fuerza existiendo otra fuerza opuesta similar a una fricción proporcional a la velocidad, dando
+En 1908 Heike K. Onnes Puedo licuar helio, aunque no consiguió solidificarlo, hecho que sucedió en 1926, en 1911 descubre la superconductividad. Si los avances experimentales para obtener bajas temperaturas No se podría haber descubierto la superconductividad. La primera descripción teórica (clásica) sobre el tema fue propuesta en 1935 por los hermanos London. Interesante destacar la esencia de estos hechos: una realización experimental permite el descubrimiento de un nuevo fenómeno, el cual conlleva a una propuesta teórica. Sin embargo, No termina allí la secuencia. El helio líquido, logrado primitivamente por Onnes, demostró tener propiedades especiales, tal es así, qué en 1937 Piotr Kapitsa (se hizo famoso en 1946 al enfrentarse a Stalin y no querer trabajar en el desarrollo de armas nucleares), descubre la superfluidez del helio. Dicho de otro modo, ausencia de viscosidad, lo cual, vence cualquier intento de ser contenido en un recipiente, el helio escapa del vaso que intenta contenerlo. Anteriormente, en el tema de la magnetorresistencia, concretamente en conducción eléctrica, sin mencionarlo específicamente hablamos de la \textbf{ley de Drude}. el modelo supone que el campo eléctrico ejerce una fuerza existiendo otra fuerza opuesta similar a una fricción proporcional a la velocidad, dando
 
 \begin{equation}
 	m\mfrac{d\overrightarrow{v}}{dt}=e\overrightarrow{E}-\gamma \overrightarrow{v}
@@ -819,7 +819,7 @@ Teniendo en cuenta la ecuación de Banner \ref{eq:41} y llamando $\lambda=\sqrt{
 
 Observamos que al resolver la ecuación diferencial el campo penetra una distancia $\lambda$ decayendo exponencialmente. El parámetro $\lambda$ es llamado profundidad de penetración
 
-De la misma ecuación \ref{eq:41} también obtenemos que la corriente de apantallamiento se encuentra localizada a una distancia $\approx \lambda$. Cuando aplicamos un campo a un superconductor la corriente que Cancela este campo penetra aproximadamente una distancia $\lambda$ en el conductor. Explica que el campo en el interior del metal debe ser nulo, ya que es una de las hipótesis del desarrollo anterior, y que existe una corriente limitada a un espesor de la superficie de superconductor, cuyo espesor es del orden de $10^{−7}m$ dependiendo de superconductor. Posteriormente se encuentra que estos resultados no son del todo correctos. Una de las hipótesis que no es correcta es la suposición de que los electrones individuales son los responsables de la conducción eléctrica, lo cual se vio que era erróneo varias décadas después. Sin embargo, a pesar de este rollo inicial, los resultados experimentales no se vieron muy afectados. Tratemos de aclarar esta situación.
+De la misma ecuación \ref{eq:41} también obtenemos que la corriente de apantallamiento se encuentra localizada a una distancia $\approx \lambda$. Cuando aplicamos un campo a un superconductor la corriente que cancela este campo penetra aproximadamente una distancia $\lambda$ en el conductor. Explica que el campo en el interior del metal debe ser nulo, ya que es una de las hipótesis del desarrollo anterior, y que existe una corriente limitada a un espesor de la superficie de superconductor, cuyo espesor es del orden de $10^{−7}m$ dependiendo de superconductor. Posteriormente se encuentra que estos resultados no son del todo correctos. Una de las hipótesis que no es correcta es la suposición de que los electrones individuales son los responsables de la conducción eléctrica, lo cual se vio que era erróneo varias décadas después. Sin embargo, a pesar de este rollo inicial, los resultados experimentales no se vieron muy afectados. Tratemos de aclarar esta situación.
 
 Basándose en resultados experimentales, Cooper (1956) propone que los portadores de carga no son en realidad los electrones individuales, sino parejas de electrones, llamados pares de Cooper, Posteriormente la teoría llamada \textbf{BCS} lo Explica en detalle. Los pares de Cooper son cuasiparticulas formadas por dos electrones, por lo tanto la masa $m=2m_{e}$ la carga $q=2q_{e}$. Cuando un electrón se mueve en una estructura superconductora distorsiona ligeramente la red de iones positivos generando Un aumento local de densidad de carga positiva que atrae al segundo electrón. El estado superconductor los electrones se hallan ligados por intermedio de la red cristalina y ambas partículas funcionan como si sea trajeran pese a que tienen igual signo sus cargas. Por tanto, los iones del material se acoplan con el movimiento de los electrones que se mueven dentro de él. Luego el arreglo de átomos de superconductor comienza a oscilar de manera periódica y coordinada con el movimiento de los electrones. En este movimiento coordinado no hay pérdida de energía.
 
@@ -835,11 +835,11 @@ La figura \ref{fig:435} es tan sólo un esquema que ejemplifique lo mencionado e
 
 \subsection{Cuantificación del flujo y fluxoides}
 
-Las ecuaciones de London constituyen un modelo fenomenológico y clásico. Mentalmente explica los superconductores tipo I, pero nada dice sobre la penetración y cuantificación de flujo en los conductores tipo II, Este caso es un fenómeno cuántico. Existen diversas maneras de acceder a la idea de cuantificación del flujo, sin hacer una demostración cuántica rigurosa. En 1950 Vitali Ginzburg y Lav landau proponen una teoría macroscópica aplicable a los superconductores de alta temperatura. Dicho de otro modo, con regiones superconductoras y normales tipo II, siendo está, una generalización de la teoría de London.
+Las ecuaciones de London constituyen un modelo fenomenológico y clásico. Mentalmente explica los superconductores tipo I, pero nada dice sobre la penetración y cuantificación de flujo en los conductores tipo II, este caso es un fenómeno cuántico. Existen diversas maneras de acceder a la idea de cuantificación del flujo, sin hacer una demostración cuántica rigurosa. En 1950 Vitali Ginzburg y Lav landau proponen una teoría macroscópica aplicable a los superconductores de alta temperatura. Dicho de otro modo, con regiones superconductoras y normales tipo II, siendo está, una generalización de la teoría de London.
 
 En la teoría se propone la función de onda macroscópica $\Psi$ o seudofunción de onda, ya que no es la solución de la ecuación de Schródinger, sin embargo, respeta varias de las propiedades de la función de onda. La podemos pensar como una función de onda macroscópica.
 
-Se interpreta a $\vert \Psi  \vert^{2}=n_{s}$ como la densidad de carga de los portadores superconductores, o sea densidad de pares de Cooper. En la mecánica clásica una onda se corresponde con algo que oscila así nos indica lugar del oscilación nos encontramos. En una onda cuántica la interpretación de la fase es más compleja, pues no hay nada que hacer. Cada par de Cooper puede ser tratado como una partícula con masa y carga igual al doble del electrón. La función de onda del electrón en un sólido suele ser muy corta debido a la dispersión que sufren los electrones al moverse el conductor, cambiando las fases de la función de onda De manera azarosa. Luego si conocemos la función de onda en un punto no significa que se la pueda conocer en otra posición.
+Se interpreta a $\vert \Psi  \vert^{2}=n_{s}$ como la densidad de carga de los portadores superconductores, o sea densidad de pares de Cooper. En la mecánica clásica una onda se corresponde con algo que oscila así nos indica lugar del oscilación nos encontramos. En una onda cuántica la interpretación de la fase es más compleja, pues no hay nada que hacer. Cada par de Cooper puede ser tratado como una partícula con masa y carga igual al doble del electrón. La función de onda del electrón en un sólido suele ser muy corta debido a la dispersión que sufren los electrones al moverse el conductor, cambiando las fases de la función de onda de manera azarosa. Luego si conocemos la función de onda en un punto no significa que se la pueda conocer en otra posición.
 
 En los superconductores los portadores son los pares de Cooper y no sufren dispersión, esto significa que hay coherencia de fase a larga distancia, del orden de $10^{-4}cm$. Cuando un metal se convierte en súper conductor la onda que describe las propiedades de los portadores cubre todo el objeto y una sola onda corresponde a todos los portadores del sistema esta onda de una fase qué llamamos $\varphi$.
 
@@ -849,7 +849,7 @@ La función de onda puede escribirse como:
 	\Psi=\Psi_{0}e^{\frac{i(\vec{P},\vec{r}}{h}}
 \end{equation}
 
-La coherencia de largo alcance permite calcular la fase y la amplitud de la función de onda en cualquier punto a partir de un valor en un punto de referencia. La coherencia cuántica son estados que mantienen la fase una cierta distancia y posibilita el fenómeno de interferencia. la variación de fase a lo largo de una cerrada del tipo $C$ debe ser múltiplo de $2\pi$ para que la función de onda sea unívoca. La función de onda la podemos escribir como una onda unidimensional
+La coherencia de largo alcance permite calcular la fase y la amplitud de la función de onda en cualquier punto a partir de un valor en un punto de referencia. La coherencia cuántica son estados que mantienen la fase una cierta distancia y posibilita el fenómeno de interferencia. La variación de fase a lo largo de una cerrada del tipo $C$ debe ser múltiplo de $2\pi$ para que la función de onda sea unívoca. La función de onda la podemos escribir como una onda unidimensional
 
 \begin{equation}
 	\Psi =  Real \left[ \Psi_{0}e^{\frac{i(\vec{k}\cdot \vec{r}-\omega t}{h}}\right] 
@@ -1011,7 +1011,7 @@ Analicemos un poco más el fenómeno. En la figura \ref{fig:440} observamos un e
 
 \subsubsection{Squid en un campo externo}
 
-Tan pronto como la corriente en cualquiera de las ramas excede a la corriente crítica de la unión Josephson, aparece un voltaje a través de la unión tal como se ve en la figura \ref{fig:441}. Analicemos el caso en que un campo externo es aplicado al Squid. En presencia de un campo magnético el momento se modifica de la siguiente forma $P=mv+eA$ que para los pares de Cooper toma la forma siguiente $P=mv+eA= k\hbar$, siguiente Siendo $A$ el potencial vectorial magnético. 
+Tan pronto como la corriente en cualquiera de las ramas excede a la corriente crítica de la unión Josephson, aparece un voltaje a través de la unión tal como se ve en la figura \ref{fig:441}. Analicemos el caso en que un campo externo es aplicado al Squid. En presencia de un campo magnético el momento se modifica de la siguiente forma $P=mv+eA$ que para los pares de Cooper toma la forma siguiente $P=mv+eA= k\hbar$, siguiente, siendo $A$ el potencial vectorial magnético. 
 
 \begin{figure}[H]
     \centering
