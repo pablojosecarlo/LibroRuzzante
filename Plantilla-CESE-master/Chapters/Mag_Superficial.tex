@@ -118,7 +118,7 @@ Expresión que nos dice que todo el campo tangente en el segundo medio es produc
 
 \subsection{Sólidos Ferromagnéticos}
 
-Los sólidos ferromagnéticos en presencia del campo magnético terrestre presentan una magnetización inducida, fuertemente condicionada por las condiciones de frontera magnética. El campo inducido por el campo magnético terrestre divergirá en las zonas de discontinuidad superficial del material y en zonas de stress, oquedades y oclusiones de otros materiales en el seno del material original. Para estos sólidos es particularmente útil el Método de la Memoria Magnética. El método también puede aplicarse, con menor grado de facilidad, a materiales paramagnéticos y ferrimagnéticos.
+Los sólidos ferromagnéticos en presencia del campo magnético terrestre presentan una magnetización inducida, fuertemente condicionada por las condiciones de frontera magnética. El campo inducido por el campo magnético terrestre divergirá en las zonas de discontinuidad superficial del material y en zonas de stress, cavidades y oclusiones de otros materiales en el seno del material original. Para estos sólidos es particularmente útil el Método de la Memoria Magnética. El método también puede aplicarse, con menor grado de facilidad, a materiales paramagnéticos y ferrimagnéticos.
 
 \subsubsection{Método de la Memoria Magnética (MMM)}
 
@@ -140,7 +140,7 @@ El método \textbf{MMM} se aplica para la solución de problemas del tipo de:
 	
 \end{itemize}
 
-El \textbf{MMM} se puede aplicar tanto en sólidos bajo carga (en tensión como en el caso de piezas de maquinaria) así como después del retiro de las cargas, cuando la pieza no se encuentra solicitada. El perfil magnético formada bajo la acción de las cargas de trabajo queda parcialmente congelado después de la descarga en virtud de la "histéresis de dislocación magnética". Esto la posibilidad de evaluar el estado real de tensiones de la pieza y revelar en etapas tempranas las zonas de daño máximo al leer los campos utilizando dispositivos de medición de campo especiales. Es importante destacar que los dispositivos de medición de campos magnéticos no tienen una norma mundial por lo que cada instrumento presenta características y singularidades únicas y las mediciones no suelen ser referidas a un patrón sino que son relativas entre sí desde un estado base.
+El \textbf{MMM} se puede aplicar tanto en sólidos bajo carga (en tensión como en el caso de piezas de maquinaria) así como después del retiro de las cargas, cuando la pieza no se encuentra solicitada. El perfil magnético formado bajo la acción de las cargas de trabajo queda parcialmente congelado después de la descarga en virtud de la "histéresis de dislocación magnética". Esto da la posibilidad de evaluar el estado real de tensiones de la pieza y revelar en etapas tempranas las zonas de daño máximo al leer los campos utilizando dispositivos de medición de campo superficiales. Es importante destacar que los dispositivos de medición de campos magnéticos no tienen una norma mundial por lo que cada instrumento presenta características y singularidades únicas y las mediciones no suelen ser referidas a un patrón sino que son relativas entre sí desde un estado base.
 
 \begin{figure}[h]
 	\centering
@@ -162,7 +162,7 @@ líneas estas saldrán o entrarán del sólido a través de la frontera más pr�
 	\label{fig:51}
 \end{figure}. 
 
-En la figura \ref{fig:51} vemos el perfil de los campos magnéticos asociados a perturbaciones en el medio debidas a heterogeneidades magnéticas primarias.
+En la figura \ref{fig:51} vemos el perfil de los campos magnéticos asociados a perturbaciones en el medio debidas a heterogeneidades magnéticas primarias; en este caso una grieta.
 
 Si la fuga de flujo hacia (o desde) el aire es lo bastante significativa, puede medirse el campo de fuga (auto-campo de fuga en la jerga del MMM) utilizando sensores de campo magnético situados lo bastante próximos a la frontera.
 
@@ -179,7 +179,7 @@ El ensayo de álabes de turbina son una aplicación frecuente del MMM. En la fig
 	\label{fig:52}
 \end{figure}
 
-En la figura \ref{fig:53} vemos el mismo mismo ensayo del alabe pero medidos los campos sobre el canto.
+En la figura \ref{fig:53} vemos el mismo mismo ensayo del álabe pero medidos los campos sobre el canto.
 
 \begin{figure}[H]
     \centering
@@ -188,13 +188,13 @@ En la figura \ref{fig:53} vemos el mismo mismo ensayo del alabe pero medidos los
 	\label{fig:53}
 \end{figure}
 
-Cuando el material es sometido a esfuerzos se observa una ariación de la magnetización en función de la tensiones inducidas en el sólido. Ver figura \ref{fig:54}. Este fenómeno es todavía mucho más marcado en materiales compuestos como las ferritas 
+Cuando el material es sometido a esfuerzos se observa una variación de la magnetización en función de la tensiones inducidas en el sólido. Ver figura \ref{fig:54}. Este fenómeno es todavía mucho más marcado en materiales compuestos como las ferritas 
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{./Figures/fig54}
 	\caption{Variación de la magnetización por tensiones inducidas}
-	\label{fig:55}
+	\label{fig:54}
 \end{figure}
 
 
@@ -252,7 +252,7 @@ Dando su solución un desarrollo análogo al de la ecuación \ref{eq:GaussGreen}
 	\partial C \rightarrow \partial C \cap R_{mag} = \partial R_{mag}
 \end{equation}
 
-Notemos que podrá ser la frontera $\partial C \cap R_{mag}$ vacía si la región de influencia de los defectos significativos no llega hasta la superficie del sólido y el término con $\partial R_{mag}$ desaparecer de \ref{eq:GaussGreen}. Por el contrario si el defecto es justamente una discontinuidad en la superficie del sólido como el indicado en la figura \ref{fig:MMM_dispersion} el vacío sera el conjunto $R_{mag}$ y solo aportara al campo su frontera $\partial R_{mag}$
+Notemos que podrá ser la frontera $\partial C \cap R_{mag}$ vacía si la región de influencia de los defectos significativos no llega hasta la superficie del sólido y el término con $\partial R_{mag}$ desaparecer de \ref{eq:GaussGreen}. Por el contrario si el defecto es justamente una discontinuidad en la superficie del sólido como el indicado en la figura \ref{fig:51} el vacío sera el conjunto $R_{mag}$ y solo aportara al campo su frontera $\partial R_{mag}$
 
 En el aire próximo a la superficie de la pieza, la perturbación $\delta\rho_{M}$ se puede expresar mediante un desarrollo multipolar respecto de un origen de coordenadas localizado en el interior del defecto $R_{mag}$, de modo que el vector posición $\vec{r}$ del punto donde se considera el campo posea un módulo $r$ mayor que el de cualquier vector posición $\vec{r'}$ correspondientes a los puntos donde $\delta \vec{M}(\vec{r'}) \neq 0$. La expresión del desarrollo multipolar correspondiente quedará como:
 
